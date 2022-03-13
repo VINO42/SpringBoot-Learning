@@ -7,6 +7,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.context.event.EventListener;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Component;
+import org.springframework.transaction.event.TransactionPhase;
 import org.springframework.transaction.event.TransactionalEventListener;
 
 
@@ -36,7 +37,8 @@ public class SyncEventListener {
 
     /**
      * @param syncEvent
-     * @se TransactionPhase
+     * @see TransactionPhase
+     * fallbackExecution = true 没有开启事务的pub 也会消费到
      */
     @Async
     @TransactionalEventListener

@@ -7,6 +7,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationEventPublisher;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -49,6 +50,7 @@ public class TestController {
     }
 
     @RequestMapping("/asyncTranPub")
+    @Transactional
     public String asyncTranPub() {
         LOGGER.info("[asyncTranPub],msg:{}", "hello");
         SyncEvent event = new SyncEvent("hello");
