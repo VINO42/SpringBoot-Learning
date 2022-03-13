@@ -50,11 +50,11 @@ public class TestController {
     }
 
     @RequestMapping("/asyncTranPub")
-    @Transactional
     public String asyncTranPub() {
         LOGGER.info("[asyncTranPub],msg:{}", "hello");
         SyncEvent event = new SyncEvent("hello");
         applicationEventPublisher.publishEvent(event);
+        //hutool的线程池不能传递context
         ThreadUtil.execAsync(new RunJob());
         threadPoolGuavaExecutors.execute(new RunJob());
         return "ok asyncTranPub";
