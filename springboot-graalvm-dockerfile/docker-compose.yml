@@ -1,0 +1,18 @@
+version: '3'
+services:
+  spring-boot-demos:
+    image: docker.io/vino/spring-boot-demos:1.0.0
+    container_name: spring-boot-demos
+    environment:
+      # 时区上海
+      TZ: Asia/Shanghai
+      SPRING_PROFILES_ACTIVE: dev
+    ports:
+      - "8899:8899"
+    volumes:
+      # 配置文件
+      - /docker/spring-boot-demos/logs/:/vino/spring-boot-demos/logs
+    privileged: true
+#    windows 本地要用bridge
+#    network_mode: "host"
+

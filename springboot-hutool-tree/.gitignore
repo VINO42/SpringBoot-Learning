@@ -31,11 +31,3 @@ build/
 
 ### VS Code ###
 .vscode/
-/log.home_IS_UNDEFINED/
-/*/.mvn/
-/*/src/test/
-/*/mvnw
-/*/mvnw.cmd
-/*/log.home_IS_UNDEFINED/
-/*/log.path_IS_UNDEFINED
-/*/logs
