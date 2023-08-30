@@ -1,5 +1,5 @@
 # SpringBoot-Learning
-
+**JDK17+SpringBoot3.x**
 * [SpringBoot 集成Activemq](https://github.com/VINO42/SpringBoot-Learning/tree/main/springboot-activemq)
 * [SpringBoot 集成easyexcel](https://github.com/VINO42/SpringBoot-Learning/tree/main/springboot-easyexcel)
 * [SpringBoot 事件驱动 异步事件驱动](https://github.com/VINO42/SpringBoot-Learning/tree/main/springboot-eventdrive)
@@ -10,3 +10,4 @@
 * [SpringBoot 集成sentry客户端lockback日志收集](https://github.com/VINO42/SpringBoot-Learning/tree/main/springboot-sentry-logback)
 * [SpringBoot 集成logback](https://github.com/VINO42/SpringBoot-Learning/tree/main/springboot-logback)
 * [SpringBoot 集成log4j2](https://github.com/VINO42/SpringBoot-Learning/tree/main/springboot-log4j2)
+* [SpringBoot 集成netty](https://github.com/VINO42/SpringBoot-Learning/tree/main/springboot-netty)
