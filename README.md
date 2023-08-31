@@ -11,3 +11,5 @@
 * [SpringBoot 集成logback](https://github.com/VINO42/SpringBoot-Learning/tree/main/springboot-logback)
 * [SpringBoot 集成log4j2](https://github.com/VINO42/SpringBoot-Learning/tree/main/springboot-log4j2)
 * [SpringBoot 集成netty](https://github.com/VINO42/SpringBoot-Learning/tree/main/springboot-netty)
+* [SpringBoot 集成redis(jedis)](https://github.com/VINO42/SpringBoot-Learning/tree/main/springboot-redis-jedis)
+* [SpringBoot 集成redis(lettuce)](https://github.com/VINO42/SpringBoot-Learning/tree/main/springboot-redis-lettuce)
