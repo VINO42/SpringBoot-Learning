@@ -13,3 +13,4 @@
 * [SpringBoot 集成netty(内嵌基于netty的http服务器)](https://github.com/VINO42/SpringBoot-Learning/tree/main/springboot-netty-http)
 * [SpringBoot 集成redis(jedis)](https://github.com/VINO42/SpringBoot-Learning/tree/main/springboot-redis-jedis)
 * [SpringBoot 集成redis(lettuce)](https://github.com/VINO42/SpringBoot-Learning/tree/main/springboot-redis-lettuce)
+* [SpringBoot 集成redisson](https://github.com/VINO42/SpringBoot-Learning/tree/main/springboot-redisson)
