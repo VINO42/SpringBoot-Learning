@@ -1,0 +1,7 @@
+POST http://127.0.0.1:8889/test/testPost
+Content-Type: application/json
+
+{
+  "age": 123,
+  "name": "jim"
+}
