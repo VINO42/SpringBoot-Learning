@@ -30,4 +30,4 @@ springcloud版本对应 `` https://spring.io/projects/spring-cloud#overview ``
       
       鉴权可以统一在业务网关做。不建议在每个端点进行做鉴权。
   
-    * ![websocket的session状态的维护方案.png](websocket%B5%C4session%D7%B4%CC%AC%B5%C4%CE%AC%BB%A4%B7%BD%B0%B8.png)
+    * ![websocket的session状态的维护方案.png](./websocket%B5%C4session%D7%B4%CC%AC%B5%C4%CE%AC%BB%A4%B7%BD%B0%B8.png)
