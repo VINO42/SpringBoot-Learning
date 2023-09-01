@@ -15,3 +15,4 @@
 * [SpringBoot 集成redis(lettuce)](https://github.com/VINO42/SpringBoot-Learning/tree/main/springboot-redis-lettuce)
 * [SpringBoot 集成redisson](https://github.com/VINO42/SpringBoot-Learning/tree/main/springboot-redisson)
 * [SpringBoot 集成jib](https://github.com/VINO42/SpringBoot-Learning/tree/main/springboot-jib)
+* [SpringBoot 集成websocket](https://github.com/VINO42/SpringBoot-Learning/tree/main/springboot-websocket)
