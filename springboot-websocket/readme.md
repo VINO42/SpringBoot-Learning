@@ -1,5 +1,8 @@
 # springboot 集成websocket
-*  测试websocket网站
+
+springcloud版本对应 `` https://spring.io/projects/spring-cloud#overview ``
+
+* 测试websocket网站
 
    ```https://websocket.jsonin.com/```
 
@@ -20,8 +23,11 @@
           问题：
           * 哈希环的实现
           * 如何解决一致性问题（单节点故障的 Session 迁移重连将代价降到最低）
-          * CAP 取舍、实例的区分依据是什么（IP ? 实例 ID？）
       * 消息队列实现
       
         使用消息队列广播连接通知到每个websocket实例,由具体的websocket实例来判断是否当前客户端的状态由自己维护
-    * websocket的鉴权？
+    * websocket的鉴权
+      
+      鉴权可以统一在业务网关做。不建议在每个端点进行做鉴权。
+  
+    * ![websocket的session状态的维护方案.png](websocket%B5%C4session%D7%B4%CC%AC%B5%C4%CE%AC%BB%A4%B7%BD%B0%B8.png)
