@@ -3,6 +3,8 @@
 ``P6Spy is a framework that enables database activity to be seamlessly intercepted and logged with no code changes to existing applications.``
 这是官方介绍
 
+注意 p6spy对性能有影响 建议不要上生产
+
 * 打印sql
 
   ```
