@@ -2,7 +2,13 @@ package io.github.vino42.configuration;
 
 import com.mybatisflex.core.mybatis.FlexConfiguration;
 import com.mybatisflex.spring.boot.ConfigurationCustomizer;
+import com.p6spy.engine.common.ConnectionInformation;
+import com.p6spy.engine.common.StatementInformation;
+import com.p6spy.engine.event.JdbcEventListener;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+
+import java.sql.SQLException;
 
 /**
  * =====================================================================================
@@ -17,7 +23,6 @@ import org.springframework.context.annotation.Configuration;
  */
 @Configuration(proxyBeanMethods = false)
 public class CustomMybatisFlexConfiguration implements ConfigurationCustomizer {
-
     @Override
     public void customize(FlexConfiguration flexConfiguration) {
         /**

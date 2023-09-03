@@ -136,7 +136,7 @@
 
     <!-- 时间滚动输出 SQL相关的日志 -->
     <appender name="SQL_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>${log.path}/sql.log</file>
+        <file>${log.path}/spy.log</file>
         <encoder>
             <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n</pattern>
             <charset>${charsetEncoding}</charset>
@@ -157,9 +157,8 @@
             <charset>${charsetEncoding}</charset>
         </encoder>
     </appender>
-
     <!--配置一些sql打印日志， 用SQL_CONSOLE的格式打印-->
-    <logger name="com.p6spy.engine.spy.appender.Slf4JLogger" level="DEBUG">
+    <logger name="io.github.vino42.configuration.P6SpyAppender"   level="DEBUG" additivity="false">
         <appender-ref ref="SQL_CONSOLE"/>
         <appender-ref ref="SQL_FILE"/>
     </logger>
@@ -174,6 +173,7 @@
             <appender-ref ref="SQL_CONSOLE"/>
             <appender-ref ref="SQL_FILE"/>
         </root>
+
     </springProfile>
 
     <!--测试环境:输出到文件-->
@@ -204,4 +204,6 @@
             <appender-ref ref="ERROR_FILE"/>
         </root>
     </springProfile>
+
+
 </configuration>
