@@ -1,0 +1,108 @@
+2023-09-03 23:06:20.343 [main] INFO  io.github.vino42.SpringbootRedissonApplication - Starting SpringbootRedissonApplication using Java 17.0.2 with PID 13900 (G:\Codes\SpringBoot-Learning\springboot-redisson\target\classes started by vino in G:\Codes\SpringBoot-Learning\springboot-redisson)
+2023-09-03 23:06:20.350 [main] INFO  io.github.vino42.SpringbootRedissonApplication - No active profile set, falling back to 1 default profile: "default"
+2023-09-03 23:06:21.164 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-09-03 23:06:21.166 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-09-03 23:06:21.192 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2023-09-03 23:06:21.634 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2023-09-03 23:06:21.643 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2023-09-03 23:06:21.645 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-09-03 23:06:21.645 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.12]
+2023-09-03 23:06:21.747 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-09-03 23:06:21.748 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1346 ms
+2023-09-03 23:06:22.077 [main] INFO  org.redisson.Version - Redisson 3.23.4
+2023-09-03 23:06:22.489 [redisson-netty-2-5] INFO  o.r.connection.pool.MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+2023-09-03 23:06:22.603 [redisson-netty-2-19] INFO  org.redisson.connection.pool.MasterConnectionPool - 24 connections initialized for 127.0.0.1/127.0.0.1:6379
+2023-09-03 23:06:23.434 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-09-03 23:06:23.479 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2023-09-03 23:06:23.493 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2023-09-03 23:06:23.516 [main] INFO  io.github.vino42.SpringbootRedissonApplication - Started SpringbootRedissonApplication in 3.752 seconds (process running for 4.369)
+2023-09-03 23:06:23.935 [RMI TCP Connection(2)-192.168.3.7] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-03 23:06:23.935 [RMI TCP Connection(2)-192.168.3.7] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-09-03 23:06:23.937 [RMI TCP Connection(2)-192.168.3.7] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2023-09-03 23:06:35.537 [main] INFO  io.github.vino42.SpringbootRedissonApplication - Starting SpringbootRedissonApplication using Java 17.0.2 with PID 21468 (G:\Codes\SpringBoot-Learning\springboot-redisson\target\classes started by vino in G:\Codes\SpringBoot-Learning\springboot-redisson)
+2023-09-03 23:06:35.540 [main] INFO  io.github.vino42.SpringbootRedissonApplication - No active profile set, falling back to 1 default profile: "default"
+2023-09-03 23:06:36.419 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-09-03 23:06:36.421 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-09-03 23:06:36.448 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2023-09-03 23:06:37.325 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2023-09-03 23:06:37.341 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2023-09-03 23:06:37.345 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-09-03 23:06:37.346 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.12]
+2023-09-03 23:06:37.597 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-09-03 23:06:37.597 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1998 ms
+2023-09-03 23:07:04.375 [main] INFO  org.redisson.Version - Redisson 3.23.4
+2023-09-03 23:07:05.289 [redisson-netty-2-4] INFO  o.r.connection.pool.MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+2023-09-03 23:07:05.395 [redisson-netty-2-19] INFO  org.redisson.connection.pool.MasterConnectionPool - 24 connections initialized for 127.0.0.1/127.0.0.1:6379
+2023-09-03 23:07:06.305 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-09-03 23:07:06.346 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2023-09-03 23:07:06.358 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2023-09-03 23:07:06.378 [main] INFO  io.github.vino42.SpringbootRedissonApplication - Started SpringbootRedissonApplication in 31.412 seconds (process running for 32.06)
+2023-09-03 23:07:06.791 [RMI TCP Connection(3)-192.168.3.7] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-03 23:07:06.791 [RMI TCP Connection(3)-192.168.3.7] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-09-03 23:07:06.793 [RMI TCP Connection(3)-192.168.3.7] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2023-09-03 23:08:10.536 [main] INFO  io.github.vino42.SpringbootRedissonApplication - Starting SpringbootRedissonApplication using Java 17.0.2 with PID 2088 (G:\Codes\SpringBoot-Learning\springboot-redisson\target\classes started by vino in G:\Codes\SpringBoot-Learning\springboot-redisson)
+2023-09-03 23:08:10.540 [main] INFO  io.github.vino42.SpringbootRedissonApplication - No active profile set, falling back to 1 default profile: "default"
+2023-09-03 23:08:11.320 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-09-03 23:08:11.323 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-09-03 23:08:11.348 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2023-09-03 23:08:11.778 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2023-09-03 23:08:11.786 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2023-09-03 23:08:11.788 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-09-03 23:08:11.789 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.12]
+2023-09-03 23:08:11.886 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-09-03 23:08:11.886 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1305 ms
+2023-09-03 23:08:13.914 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2023-09-03 23:08:19.474 [main] INFO  io.github.vino42.SpringbootRedissonApplication - Starting SpringbootRedissonApplication using Java 17.0.2 with PID 21284 (G:\Codes\SpringBoot-Learning\springboot-redisson\target\classes started by vino in G:\Codes\SpringBoot-Learning\springboot-redisson)
+2023-09-03 23:08:19.479 [main] INFO  io.github.vino42.SpringbootRedissonApplication - No active profile set, falling back to 1 default profile: "default"
+2023-09-03 23:08:20.289 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-09-03 23:08:20.291 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-09-03 23:08:20.315 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2023-09-03 23:08:20.760 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2023-09-03 23:08:20.771 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2023-09-03 23:08:20.773 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-09-03 23:08:20.773 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.12]
+2023-09-03 23:08:20.883 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-09-03 23:08:20.884 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1356 ms
+2023-09-03 23:08:43.397 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2023-09-03 23:09:31.508 [main] INFO  io.github.vino42.SpringbootRedissonApplication - Starting SpringbootRedissonApplication using Java 17.0.2 with PID 20884 (G:\Codes\SpringBoot-Learning\springboot-redisson\target\classes started by vino in G:\Codes\SpringBoot-Learning\springboot-redisson)
+2023-09-03 23:09:31.511 [main] INFO  io.github.vino42.SpringbootRedissonApplication - No active profile set, falling back to 1 default profile: "default"
+2023-09-03 23:09:32.288 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-09-03 23:09:32.291 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-09-03 23:09:32.315 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2023-09-03 23:09:32.745 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2023-09-03 23:09:32.753 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2023-09-03 23:09:32.755 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-09-03 23:09:32.756 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.12]
+2023-09-03 23:09:32.855 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-09-03 23:09:32.856 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1299 ms
+2023-09-03 23:10:20.971 [main] INFO  org.redisson.Version - Redisson 3.23.4
+2023-09-03 23:10:21.632 [redisson-netty-2-5] INFO  o.r.connection.pool.MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+2023-09-03 23:10:21.737 [redisson-netty-2-3] INFO  org.redisson.connection.pool.MasterConnectionPool - 32 connections initialized for 127.0.0.1/127.0.0.1:6379
+2023-09-03 23:10:22.628 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-09-03 23:10:22.669 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2023-09-03 23:10:22.681 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2023-09-03 23:10:22.708 [main] INFO  io.github.vino42.SpringbootRedissonApplication - Started SpringbootRedissonApplication in 51.775 seconds (process running for 52.431)
+2023-09-03 23:10:22.908 [RMI TCP Connection(3)-192.168.3.7] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-03 23:10:22.908 [RMI TCP Connection(3)-192.168.3.7] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-09-03 23:10:22.910 [RMI TCP Connection(3)-192.168.3.7] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2023-09-03 23:24:49.304 [main] INFO  io.github.vino42.SpringbootRedissonApplication - Starting SpringbootRedissonApplication using Java 17.0.2 with PID 17200 (G:\Codes\SpringBoot-Learning\springboot-redisson\target\classes started by vino in G:\Codes\SpringBoot-Learning\springboot-redisson)
+2023-09-03 23:24:49.307 [main] INFO  io.github.vino42.SpringbootRedissonApplication - No active profile set, falling back to 1 default profile: "default"
+2023-09-03 23:24:50.070 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-09-03 23:24:50.072 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-09-03 23:24:50.095 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2023-09-03 23:24:50.512 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2023-09-03 23:24:50.520 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2023-09-03 23:24:50.522 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-09-03 23:24:50.522 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.12]
+2023-09-03 23:24:50.618 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-09-03 23:24:50.618 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1268 ms
+2023-09-03 23:24:58.318 [main] INFO  org.redisson.Version - Redisson 3.23.4
+2023-09-03 23:24:58.612 [redisson-netty-2-4] INFO  o.r.connection.pool.MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+2023-09-03 23:24:58.719 [redisson-netty-2-3] INFO  org.redisson.connection.pool.MasterConnectionPool - 32 connections initialized for 127.0.0.1/127.0.0.1:6379
+2023-09-03 23:24:59.498 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-09-03 23:24:59.537 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2023-09-03 23:24:59.548 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2023-09-03 23:24:59.573 [main] INFO  io.github.vino42.SpringbootRedissonApplication - Started SpringbootRedissonApplication in 10.82 seconds (process running for 11.421)
+2023-09-03 23:25:00.180 [RMI TCP Connection(1)-192.168.3.7] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-03 23:25:00.180 [RMI TCP Connection(1)-192.168.3.7] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-09-03 23:25:00.182 [RMI TCP Connection(1)-192.168.3.7] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms

@@ -1,14 +1,12 @@
 package io.github.vino42.controller;
 
 import com.mybatisflex.core.paginate.Page;
-import io.github.vino42.common.ServiceResponseResult;
-import io.github.vino42.common.ResultMapper;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.*;
-import jakarta.validation.Valid;
 import io.github.vino42.domain.entity.SysAccountEntity;
 import io.github.vino42.service.SysAccountService;
-import org.springframework.web.bind.annotation.RestController;
+import io.github.vino42.support.ResultMapper;
+import io.github.vino42.support.ServiceResponseResult;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
 
 import java.io.Serializable;
 import java.util.List;
@@ -38,7 +36,7 @@ public class SysAccountController {
      * @return {@code true} 添加成功，{@code false} 添加失败
      */
     @PostMapping("/save")
-    public ServiceResponseResult<Boolean> save(@Valid @RequestBody SysAccountEntity sysAccountEntity) {
+    public ServiceResponseResult<Boolean> save(@RequestBody SysAccountEntity sysAccountEntity) {
         return ResultMapper.ok(sysAccountService.save(sysAccountEntity));
     }
 
@@ -60,7 +58,7 @@ public class SysAccountController {
      * @return {@code true} 更新成功，{@code false} 更新失败
      */
     @PostMapping("/update")
-    public ServiceResponseResult<Boolean> update(@Valid @RequestBody SysAccountEntity sysAccountEntity) {
+    public ServiceResponseResult<Boolean> update(@RequestBody SysAccountEntity sysAccountEntity) {
         return ResultMapper.ok(sysAccountService.updateById(sysAccountEntity));
     }
 

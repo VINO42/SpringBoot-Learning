@@ -7,6 +7,7 @@ import io.github.vino42.service.SysAccountService;
 import org.springframework.stereotype.Service;
 import com.mybatisflex.core.paginate.Page;
 import com.mybatisflex.core.query.QueryWrapper;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.io.Serializable;
 import java.util.Collection;
@@ -27,31 +28,37 @@ import java.util.List;
 public class SysAccountImpl extends ServiceImpl<SysAccountMapper, SysAccountEntity> implements SysAccountService {
 
     @Override
+    @Transactional(rollbackFor = Exception.class)
     public boolean remove(QueryWrapper query) {
         return super.remove(query);
     }
 
     @Override
+    @Transactional(rollbackFor = Exception.class)
     public boolean removeById(Serializable id) {
         return super.removeById(id);
     }
 
     @Override
+    @Transactional(rollbackFor = Exception.class)
     public boolean removeByIds(Collection<? extends Serializable> ids) {
         return super.removeByIds(ids);
     }
 
     @Override
+    @Transactional(rollbackFor = Exception.class)
     public boolean update(SysAccountEntity entity, QueryWrapper query) {
         return super.update(entity, query);
     }
 
     @Override
+    @Transactional(rollbackFor = Exception.class)
     public boolean updateById(SysAccountEntity entity, boolean ignoreNulls) {
         return super.updateById(entity, ignoreNulls);
     }
 
     @Override
+    @Transactional(rollbackFor = Exception.class)
     public boolean updateBatch(Collection<SysAccountEntity> entities, int batchSize) {
         return super.updateBatch(entities, batchSize);
     }

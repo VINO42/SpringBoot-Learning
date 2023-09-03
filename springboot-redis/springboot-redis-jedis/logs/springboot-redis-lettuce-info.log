@@ -1,0 +1,107 @@
+2023-08-31 20:19:29.661 [main] INFO  io.github.vino42.SpringbootRedisJedisApplication - Starting SpringbootRedisJedisApplication using Java 17.0.2 with PID 12952 (G:\Codes\SpringBoot-Learning\springboot-redis-jedis\target\classes started by vino in G:\Codes\SpringBoot-Learning\springboot-redis-jedis)
+2023-08-31 20:19:29.664 [main] INFO  io.github.vino42.SpringbootRedisJedisApplication - No active profile set, falling back to 1 default profile: "default"
+2023-08-31 20:19:30.657 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8887 (http)
+2023-08-31 20:19:30.665 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8887"]
+2023-08-31 20:19:30.668 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-31 20:19:30.668 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.12]
+2023-08-31 20:19:30.752 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-31 20:19:30.753 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1036 ms
+2023-08-31 20:19:30.859 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2023-08-31 20:20:27.269 [main] INFO  io.github.vino42.SpringbootRedisJedisApplication - Starting SpringbootRedisJedisApplication using Java 17.0.2 with PID 20764 (G:\Codes\SpringBoot-Learning\springboot-redis-jedis\target\classes started by vino in G:\Codes\SpringBoot-Learning\springboot-redis-jedis)
+2023-08-31 20:20:27.273 [main] INFO  io.github.vino42.SpringbootRedisJedisApplication - No active profile set, falling back to 1 default profile: "default"
+2023-08-31 20:20:28.281 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8887 (http)
+2023-08-31 20:20:28.289 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8887"]
+2023-08-31 20:20:28.290 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-31 20:20:28.291 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.12]
+2023-08-31 20:20:28.377 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-31 20:20:28.378 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1059 ms
+2023-08-31 20:20:28.481 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2023-08-31 20:22:19.453 [main] INFO  io.github.vino42.SpringbootRedisJedisApplication - Starting SpringbootRedisJedisApplication using Java 17.0.2 with PID 15308 (G:\Codes\SpringBoot-Learning\springboot-redis-jedis\target\classes started by vino in G:\Codes\SpringBoot-Learning\springboot-redis-jedis)
+2023-08-31 20:22:19.456 [main] INFO  io.github.vino42.SpringbootRedisJedisApplication - No active profile set, falling back to 1 default profile: "default"
+2023-08-31 20:22:20.378 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8887 (http)
+2023-08-31 20:22:20.388 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8887"]
+2023-08-31 20:22:20.390 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-31 20:22:20.391 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.12]
+2023-08-31 20:22:20.479 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-31 20:22:20.480 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 982 ms
+2023-08-31 20:22:20.589 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2023-08-31 20:22:42.043 [main] INFO  io.github.vino42.SpringbootRedisJedisApplication - Starting SpringbootRedisJedisApplication using Java 17.0.2 with PID 20792 (G:\Codes\SpringBoot-Learning\springboot-redis-jedis\target\classes started by vino in G:\Codes\SpringBoot-Learning\springboot-redis-jedis)
+2023-08-31 20:22:42.046 [main] INFO  io.github.vino42.SpringbootRedisJedisApplication - No active profile set, falling back to 1 default profile: "default"
+2023-08-31 20:22:43.007 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8887 (http)
+2023-08-31 20:22:43.014 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8887"]
+2023-08-31 20:22:43.017 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-31 20:22:43.017 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.12]
+2023-08-31 20:22:43.100 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-31 20:22:43.100 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1010 ms
+2023-08-31 20:22:43.199 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2023-08-31 20:22:55.771 [main] INFO  io.github.vino42.SpringbootRedisJedisApplication - Starting SpringbootRedisJedisApplication using Java 17.0.2 with PID 6024 (G:\Codes\SpringBoot-Learning\springboot-redis-jedis\target\classes started by vino in G:\Codes\SpringBoot-Learning\springboot-redis-jedis)
+2023-08-31 20:22:55.773 [main] INFO  io.github.vino42.SpringbootRedisJedisApplication - No active profile set, falling back to 1 default profile: "default"
+2023-08-31 20:22:56.704 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8887 (http)
+2023-08-31 20:22:56.711 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8887"]
+2023-08-31 20:22:56.713 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-31 20:22:56.713 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.12]
+2023-08-31 20:22:56.797 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-31 20:22:56.797 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 980 ms
+2023-08-31 20:22:56.907 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2023-08-31 20:33:41.780 [main] INFO  io.github.vino42.SpringbootRedisJedisApplication - Starting SpringbootRedisJedisApplication using Java 17.0.2 with PID 9708 (G:\Codes\SpringBoot-Learning\springboot-redis-jedis\target\classes started by vino in G:\Codes\SpringBoot-Learning\springboot-redis-jedis)
+2023-08-31 20:33:41.783 [main] INFO  io.github.vino42.SpringbootRedisJedisApplication - No active profile set, falling back to 1 default profile: "default"
+2023-08-31 20:33:42.355 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-08-31 20:33:42.358 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-08-31 20:33:42.387 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2023-08-31 20:33:42.901 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8887 (http)
+2023-08-31 20:33:42.908 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8887"]
+2023-08-31 20:33:42.910 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-31 20:33:42.910 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.12]
+2023-08-31 20:33:42.993 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-31 20:33:42.993 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1167 ms
+2023-08-31 20:33:43.725 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8887"]
+2023-08-31 20:33:43.755 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8887 (http) with context path ''
+2023-08-31 20:33:43.767 [main] INFO  io.github.vino42.SpringbootRedisJedisApplication - Started SpringbootRedisJedisApplication in 2.523 seconds (process running for 3.125)
+2023-08-31 20:34:27.594 [http-nio-8887-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-31 20:34:27.594 [http-nio-8887-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-08-31 20:34:27.596 [http-nio-8887-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2023-08-31 20:35:22.080 [main] INFO  io.github.vino42.SpringbootRedisJedisApplication - Starting SpringbootRedisJedisApplication using Java 17.0.2 with PID 21484 (G:\Codes\SpringBoot-Learning\springboot-redis-jedis\target\classes started by vino in G:\Codes\SpringBoot-Learning\springboot-redis-jedis)
+2023-08-31 20:35:22.083 [main] INFO  io.github.vino42.SpringbootRedisJedisApplication - No active profile set, falling back to 1 default profile: "default"
+2023-08-31 20:35:22.662 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-08-31 20:35:22.665 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-08-31 20:35:22.694 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2023-08-31 20:35:23.163 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8887 (http)
+2023-08-31 20:35:23.172 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8887"]
+2023-08-31 20:35:23.174 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-31 20:35:23.175 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.12]
+2023-08-31 20:35:23.261 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-31 20:35:23.261 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1126 ms
+2023-08-31 20:35:23.942 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8887"]
+2023-08-31 20:35:23.965 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8887 (http) with context path ''
+2023-08-31 20:35:23.977 [main] INFO  io.github.vino42.SpringbootRedisJedisApplication - Started SpringbootRedisJedisApplication in 2.435 seconds (process running for 3.032)
+2023-08-31 20:35:44.645 [http-nio-8887-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-31 20:35:44.645 [http-nio-8887-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-08-31 20:35:44.646 [http-nio-8887-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2023-08-31 20:37:22.554 [main] INFO  io.github.vino42.SpringbootRedisJedisApplication - Starting SpringbootRedisJedisApplication using Java 17.0.2 with PID 17496 (G:\Codes\SpringBoot-Learning\springboot-redis-jedis\target\classes started by vino in G:\Codes\SpringBoot-Learning\springboot-redis-jedis)
+2023-08-31 20:37:22.556 [main] INFO  io.github.vino42.SpringbootRedisJedisApplication - No active profile set, falling back to 1 default profile: "default"
+2023-08-31 20:37:23.100 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-08-31 20:37:23.102 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-08-31 20:37:23.129 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2023-08-31 20:37:23.574 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8887 (http)
+2023-08-31 20:37:23.582 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8887"]
+2023-08-31 20:37:23.584 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-31 20:37:23.584 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.12]
+2023-08-31 20:37:23.675 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-31 20:37:23.675 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1073 ms
+2023-08-31 20:37:24.382 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8887"]
+2023-08-31 20:37:24.401 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8887 (http) with context path ''
+2023-08-31 20:37:24.413 [main] INFO  io.github.vino42.SpringbootRedisJedisApplication - Started SpringbootRedisJedisApplication in 2.417 seconds (process running for 3.029)
+2023-08-31 20:38:27.069 [main] INFO  io.github.vino42.SpringbootRedisJedisApplication - Starting SpringbootRedisJedisApplication using Java 17.0.2 with PID 20692 (G:\Codes\SpringBoot-Learning\springboot-redis-jedis\target\classes started by vino in G:\Codes\SpringBoot-Learning\springboot-redis-jedis)
+2023-08-31 20:38:27.072 [main] INFO  io.github.vino42.SpringbootRedisJedisApplication - No active profile set, falling back to 1 default profile: "default"
+2023-08-31 20:38:27.611 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-08-31 20:38:27.613 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-08-31 20:38:27.641 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2023-08-31 20:38:28.081 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8887 (http)
+2023-08-31 20:38:28.090 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8887"]
+2023-08-31 20:38:28.092 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-31 20:38:28.092 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.12]
+2023-08-31 20:38:28.180 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-31 20:38:28.180 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1063 ms
+2023-08-31 20:38:28.837 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8887"]
+2023-08-31 20:38:28.857 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8887 (http) with context path ''
+2023-08-31 20:38:28.869 [main] INFO  io.github.vino42.SpringbootRedisJedisApplication - Started SpringbootRedisJedisApplication in 2.334 seconds (process running for 2.94)
