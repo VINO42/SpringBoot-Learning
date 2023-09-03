@@ -134,17 +134,6 @@
         </filter>
     </appender>
 
-    <appender name="Sentry" class="io.sentry.logback.SentryAppender">
-        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
-            <level>WARN</level>
-        </filter>
-        <!-- 使用默认的 SentryAppender encoder 格式 -->
-        <encoder>
-            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n</pattern>
-            <charset>${charsetEncoding}</charset>
-        </encoder>
-    </appender>
-
     <!-- 时间滚动输出 SQL相关的日志 -->
     <appender name="SQL_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <file>${log.path}/sql.log</file>
@@ -182,7 +171,8 @@
             <appender-ref ref="INFO_FILE"/>
             <appender-ref ref="WARN_FILE"/>
             <appender-ref ref="ERROR_FILE"/>
-            <appender-ref ref="Sentry"/>
+            <appender-ref ref="SQL_CONSOLE"/>
+            <appender-ref ref="SQL_FILE"/>
         </root>
     </springProfile>
 
@@ -193,16 +183,19 @@
             <appender-ref ref="INFO_FILE"/>
             <appender-ref ref="WARN_FILE"/>
             <appender-ref ref="ERROR_FILE"/>
-            <appender-ref ref="Sentry"/>
+            <appender-ref ref="SQL_CONSOLE"/>
+            <appender-ref ref="SQL_FILE"/>
         </root>
     </springProfile>
 
     <!--生产环境:输出到文件-->
     <springProfile name="prod">
         <root level="info">
+            <appender-ref ref="INFO_FILE"/>
             <appender-ref ref="WARN_FILE"/>
             <appender-ref ref="ERROR_FILE"/>
-            <appender-ref ref="Sentry"/>
+            <appender-ref ref="SQL_CONSOLE"/>
+            <appender-ref ref="SQL_FILE"/>
         </root>
     </springProfile>
 
@@ -213,7 +206,8 @@
             <appender-ref ref="INFO_FILE"/>
             <appender-ref ref="WARN_FILE"/>
             <appender-ref ref="ERROR_FILE"/>
-            <appender-ref ref="Sentry"/>
+            <appender-ref ref="SQL_CONSOLE"/>
+            <appender-ref ref="SQL_FILE"/>
         </root>
     </springProfile>
 </configuration>

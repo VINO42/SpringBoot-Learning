@@ -159,7 +159,7 @@
     </appender>
 
     <!--配置一些sql打印日志， 用SQL_CONSOLE的格式打印-->
-    <logger name="io.github.vino42.mapper" level="DEBUG">
+    <logger name="com.p6spy.engine.spy.appender.Slf4JLogger" level="DEBUG">
         <appender-ref ref="SQL_CONSOLE"/>
         <appender-ref ref="SQL_FILE"/>
     </logger>
@@ -171,6 +171,8 @@
             <appender-ref ref="INFO_FILE"/>
             <appender-ref ref="WARN_FILE"/>
             <appender-ref ref="ERROR_FILE"/>
+            <appender-ref ref="SQL_CONSOLE"/>
+            <appender-ref ref="SQL_FILE"/>
         </root>
     </springProfile>
 
