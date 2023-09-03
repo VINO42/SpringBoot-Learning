@@ -7,6 +7,8 @@ logging:
 server:
   port: 8888
 spring:
+  application:
+    name: springboot-redisson
   data:
     redis:
       host: 127.0.0.1
