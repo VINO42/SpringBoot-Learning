@@ -1,0 +1,45 @@
+logging:
+  level:
+    root: debug
+  config: classpath:logback-spring.xml
+  file:
+    path: logs
+server:
+  port: 8888
+spring:
+  application:
+    name: springboot-multidatasource
+  datasource:
+    hikari:
+      pool-name: XXX-Hikaricp
+      minimum-idle: 10
+      idle-timeout: 30000
+      maximum-pool-size: 10
+      auto-commit: true
+      max-lifetime: 1800000
+      connection-timeout: 30000
+    dynamic:
+      primary: primary
+      hikari:
+        max-pool-size: 10
+        min-idle: 10
+        idle-timeout: -1
+      strict: true
+      datasource:
+        primary:
+          driver-class-name: com.mysql.cj.jdbc.Driver
+          type: com.zaxxer.hikari.HikariDataSource
+          url: jdbc:mysql://localhost:3306/prim?characterEncoding=utf-8&allowMultiQueries=true&serverTimezone=Asia/Shanghai&useAffectedRows=true&useSSL=false
+          username: root
+          password: nopasswd
+        second:
+          driver-class-name: com.mysql.cj.jdbc.Driver
+          type: com.zaxxer.hikari.HikariDataSource
+          url: jdbc:mysql://localhost:3306/secondary?characterEncoding=utf-8&allowMultiQueries=true&serverTimezone=Asia/Shanghai&useAffectedRows=true&useSSL=false
+          username: root
+          password: nopasswd
+          hikari:
+            data-source-properties:
+              jdbc-url: jdbc:mysql://localhost:3306/secondary?characterEncoding=utf-8&allowMultiQueries=true&serverTimezone=Asia/Shanghai&useAffectedRows=true&useSSL=false
+              username: root
+              password: nopasswd
