@@ -28,3 +28,4 @@
 * [SpringBoot 集成rocketmq](https://github.com/VINO42/SpringBoot-Learning/tree/main/springboot-rocketmq)
 * [SpringBoot 集成rabbitmq](https://github.com/VINO42/SpringBoot-Learning/tree/main/springboot-rabbitmq)
 * [SpringBoot 集成pulsar](https://github.com/VINO42/SpringBoot-Learning/tree/main/springboot-pulsar)
+* [SpringBoot 集成多数据源](https://github.com/VINO42/SpringBoot-Learning/tree/main/springboot-multidatasource-plus)

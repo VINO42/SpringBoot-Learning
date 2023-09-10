@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>io.github.vino42</groupId>
-    <artifactId>springboot-multidatasource</artifactId>
+    <artifactId>springboot-multidatasource-plus</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>springboot-multidatasource</name>
     <description>springboot-multidatasource</description>
