@@ -1,4 +1,7 @@
 # SpringBoot-Learning
+
+关注公众号,永不迷路。
+
 **JDK17+SpringBoot3.x，回顾总结使用springboot的经验**
 * [SpringBoot 集成Activemq](https://github.com/VINO42/SpringBoot-Learning/tree/main/springboot-activemq)
 * [SpringBoot 集成easyexcel](https://github.com/VINO42/SpringBoot-Learning/tree/main/springboot-easyexcel)
