@@ -20,4 +20,6 @@
 
 * @CachePut 的逻辑是：执行方法体 - 将结果缓存起来；
 
+* @CacheConfig 用在类上 统一的cacheName等配置 一般不用
+
 

@@ -1,0 +1,4 @@
+#这里id填上一步add返回的id
+GET /del?id=1701245078752722944 HTTP/1.1
+Host: 127.0.0.1:8899
+Cookie: Cookie_1=value; x-token=96Pj1ULlnkA8sOHVAwrAWdCVee8tZS9LqoOhihq7YII=

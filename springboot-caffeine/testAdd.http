@@ -1,0 +1,12 @@
+GET /add HTTP/1.1
+Host: 127.0.0.1:8899
+Content-Type: application/json
+Cookie: Cookie_1=value; x-token=96Pj1ULlnkA8sOHVAwrAWdCVee8tZS9LqoOhihq7YII=
+Content-Length: 73
+
+{
+  "orgId":3,
+  "userId":4,
+  "mobile":"188",
+  "statu":1
+}

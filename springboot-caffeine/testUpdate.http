@@ -1,0 +1,13 @@
+GET /update HTTP/1.1
+Host: 127.0.0.1:8899
+Content-Type: application/json
+Cookie: Cookie_1=value; x-token=96Pj1ULlnkA8sOHVAwrAWdCVee8tZS9LqoOhihq7YII=
+Content-Length: 114
+#这里id填上一步add返回的id
+{
+  "id": 1701245078752722944,
+  "orgId":3,
+  "userId":4,
+  "mobile":"188888888888",
+  "statu":1
+}
