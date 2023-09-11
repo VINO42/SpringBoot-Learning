@@ -1,4 +1,4 @@
-# Springboot3 +Springcache集成caffine
+# Springboot3 +Springcache集成caffeine
 
 * caffeine简介
   Caffeine是一个基于Java8开发的提供了近乎最佳命中率的高性能的缓存库。存和ConcurrentMap有点相似，
