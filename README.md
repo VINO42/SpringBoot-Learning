@@ -30,3 +30,4 @@
 * [SpringBoot 集成pulsar](https://github.com/VINO42/SpringBoot-Learning/tree/main/springboot-pulsar)
 * [SpringBoot 集成多数据源](https://github.com/VINO42/SpringBoot-Learning/tree/main/springboot-multidatasource-plus)
 * [SpringBoot SpringCache集成caffeine](https://github.com/VINO42/SpringBoot-Learning/tree/main/springboot-caffeine)
+* [SpringBoot 基于netty mqtt over websocket实现](https://github.com/VINO42/SpringBoot-Learning/tree/main/springboot-netty-mqtt)
