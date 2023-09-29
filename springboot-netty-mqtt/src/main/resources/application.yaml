@@ -1,0 +1,38 @@
+logging:
+  config: classpath:logback-spring.xml
+  file:
+    path: logs
+  level:
+    root: debug
+server:
+  socketType: MQTT_OVER_WS
+  port: 8899
+spring:
+  application:
+    name: springboot-mqtt
+  data:
+    redis:
+      host: 127.0.0.1
+      password: nopasswd
+      port: 6379
+      timeout: 10000
+  redis:
+    redisson:
+      config: |
+        codec: !<org.redisson.codec.JsonJacksonCodec> {}
+        nettyThreads: 16
+        singleServerConfig:
+          address: redis://127.0.0.1:6379
+          connectTimeout: 3000
+          connectionMinimumIdleSize: 32
+          connectionPoolSize: 64
+          idleConnectionTimeout: 10000
+          password: nopasswd
+          retryAttempts: 3
+          retryInterval: 1500
+          subscriptionConnectionMinimumIdleSize: 1
+          subscriptionConnectionPoolSize: 50
+          subscriptionsPerConnection: 5
+          timeout: 10000
+        threads: 24
+        transportMode: NIO

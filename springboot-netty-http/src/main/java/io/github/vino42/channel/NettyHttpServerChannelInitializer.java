@@ -1,6 +1,7 @@
 package io.github.vino42.channel;
 
 import io.github.vino42.handler.NettyHttpServerHandler;
+import io.netty.channel.ChannelHandler;
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.ChannelPipeline;
 import io.netty.channel.socket.SocketChannel;
@@ -9,6 +10,7 @@ import io.netty.handler.codec.http.HttpObjectAggregator;
 import io.netty.handler.codec.http.HttpServerCodec;
 import io.netty.handler.codec.http.HttpServerExpectContinueHandler;
 import io.netty.handler.timeout.IdleStateHandler;
+import lombok.extern.slf4j.Slf4j;
 
 import java.util.concurrent.TimeUnit;
 
@@ -23,6 +25,8 @@ import java.util.concurrent.TimeUnit;
  * @Decription : netty channle定义
  * =====================================================================================
  */
+@ChannelHandler.Sharable
+@Slf4j
 public class NettyHttpServerChannelInitializer extends ChannelInitializer<SocketChannel> {
 
     @Override

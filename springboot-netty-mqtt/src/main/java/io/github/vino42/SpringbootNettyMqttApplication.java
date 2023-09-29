@@ -1,4 +1,4 @@
-package io.github.vino42.springbootnettymqtt;
+package io.github.vino42;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
