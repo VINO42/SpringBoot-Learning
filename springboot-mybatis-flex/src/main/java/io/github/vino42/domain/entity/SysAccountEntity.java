@@ -3,9 +3,11 @@ package io.github.vino42.domain.entity;
 import com.mybatisflex.annotation.Id;
 import com.mybatisflex.annotation.KeyType;
 import com.mybatisflex.annotation.Table;
+
 import java.io.Serializable;
 import java.math.BigInteger;
 import java.time.LocalDateTime;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -22,7 +24,7 @@ import com.mybatisflex.core.activerecord.Model;
  * @Author :    vino
  * @Copyright : vino
  * @Decription : 账号表 实体类。
- * @Since:  2023-09-03
+ * @Since: 2023-09-03
  * =====================================================================================
  */
 @Data
@@ -32,7 +34,7 @@ import com.mybatisflex.core.activerecord.Model;
 @Accessors(chain = true)
 @EqualsAndHashCode(callSuper = true)
 @Table(value = "sys_account")
-public class SysAccountEntity extends Model<SysAccountEntity>  implements Serializable {
+public class SysAccountEntity extends Model<SysAccountEntity> implements Serializable {
 
 
     /**

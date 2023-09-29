@@ -25,7 +25,7 @@ public class TestController {
     public void testLog() {
         logger.info("test接口");//最低拦截级别为warn，所以info不会输出发送到日志中心
         logger.error("error"); //会显示在日志中心，并邮件通知相关联系人
-        int i=1/0;
+        int i = 1 / 0;
     }
 
 

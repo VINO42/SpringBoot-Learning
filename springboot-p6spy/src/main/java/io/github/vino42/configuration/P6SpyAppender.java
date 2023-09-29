@@ -17,7 +17,7 @@ import org.slf4j.LoggerFactory;
  * =====================================================================================
  */
 public class P6SpyAppender implements P6Logger {
-    private  Logger log;
+    private Logger log;
 
 
     private P6SpyLoggerStrategy strategy;

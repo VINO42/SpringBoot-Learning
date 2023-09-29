@@ -6,7 +6,7 @@ package io.github.vino42.serialize;
  * @Created :   2023/8/31 21:55
  * @Compiler :  jdk 17
  * @Author :    VINO
- * @Email : 
+ * @Email :
  * @Copyright : VINO
  * @Decription : 自定义序列化接口
  * =====================================================================================

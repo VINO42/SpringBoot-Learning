@@ -16,6 +16,6 @@ public interface WebSocketConstants {
     String WEB_SOCKET_SERVICE_NAME = "springboot-websocket";
 
     String USER_ID = "userId";
-    String ORIGIN_GATEWAY_REQUEST_URL_ATTR="ORIGIN_GATEWAY_REQUEST_URL_ATTR";
+    String ORIGIN_GATEWAY_REQUEST_URL_ATTR = "ORIGIN_GATEWAY_REQUEST_URL_ATTR";
 
 }

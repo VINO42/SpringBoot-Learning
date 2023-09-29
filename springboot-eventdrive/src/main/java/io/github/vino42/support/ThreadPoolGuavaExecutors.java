@@ -13,7 +13,7 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
- *  guava 扩展的线程池 单例模式保证内存中只有一个线程池对象
+ * guava 扩展的线程池 单例模式保证内存中只有一个线程池对象
  */
 public class ThreadPoolGuavaExecutors {
 
@@ -46,12 +46,12 @@ public class ThreadPoolGuavaExecutors {
     }
 
     public void execute(Runnable runnable) {
-        this.fixedContext=getContextForTask();
+        this.fixedContext = getContextForTask();
         defaultCompletedExecutorService.execute(runnable);
     }
 
     public ListenableFuture<?> submit(Runnable runnable) {
-        this.fixedContext=getContextForTask();
+        this.fixedContext = getContextForTask();
         ListenableFuture<?> future = defaultCompletedExecutorService.submit(runnable);
         return future;
     }

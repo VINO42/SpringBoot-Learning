@@ -31,12 +31,13 @@ public class TestRedissonController {
      */
     @Autowired
     StringRedisTemplate stringRedisTemplate;
+
     @RequestMapping("test1")
     public String testRedissoon() {
         redisService.rmapSet("a", "b", "123");
         Object o = redisService.rmapGet("a", "b");
         System.out.println(o);
-        stringRedisTemplate.opsForValue().set("c","d",10000, TimeUnit.SECONDS);
+        stringRedisTemplate.opsForValue().set("c", "d", 10000, TimeUnit.SECONDS);
         String s = stringRedisTemplate.opsForValue().get("c");
         System.out.println(s);
         return "ok";

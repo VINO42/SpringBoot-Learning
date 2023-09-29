@@ -22,7 +22,7 @@ import java.util.*;
  * @Created :   2023/8/31 23:04
  * @Compiler :  jdk 17
  * @Author :    VINO
- * @Email : 
+ * @Email :
  * @Copyright : VINO
  * @Decription :
  * =====================================================================================
@@ -54,12 +54,12 @@ public class RequestMappingInfoMetaInitilizer {
             RequestMethodsRequestCondition methodsCondition = info.getMethodsCondition();
             if (methodsCondition.getMethods().size() != 0) {
                 for (RequestMethod requestMethod : methodsCondition.getMethods()) {
-                    if (requestMethod.asHttpMethod().name().toLowerCase().equalsIgnoreCase(HttpMethod.POST.name())){
+                    if (requestMethod.asHttpMethod().name().toLowerCase().equalsIgnoreCase(HttpMethod.POST.name())) {
                         Class<?>[] parameterType = method.getMethod().getParameterTypes();
                         for (Class<?> aClass : parameterType) {
                             ClassLoader classLoader = aClass.getClassLoader();
-                            if (classLoader!=null){
-                               //非基础类型
+                            if (classLoader != null) {
+                                //非基础类型
                                 meta.setParamaClaz(aClass);
                             }
 
@@ -71,7 +71,7 @@ public class RequestMappingInfoMetaInitilizer {
                 Class<?>[] parameterType = method.getMethod().getParameterTypes();
                 for (Class<?> aClass : parameterType) {
                     ClassLoader classLoader = aClass.getClassLoader();
-                    if (classLoader!=null){
+                    if (classLoader != null) {
                         //非基础类型
                         meta.setParamaClaz(aClass);
                     }

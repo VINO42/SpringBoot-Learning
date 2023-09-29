@@ -14,13 +14,13 @@ import java.util.Date;
  * @Created :   2022/3/15 20:51
  * @Compiler :  jdk 17
  * @Author :    VINO
- * @Email : 
+ * @Email :
  * @Copyright : VINO
  * @Decription :
  * =====================================================================================
  */
 public class ExcelExportModel implements Serializable {
-    @ExcelProperty(value = "创建日期", index = 0 )
+    @ExcelProperty(value = "创建日期", index = 0)
     private Date createDate;
     @ExcelProperty(value = "年龄", index = 1)
     private String age;
@@ -81,7 +81,7 @@ public class ExcelExportModel implements Serializable {
 
     public static ExcelExportModel getData() {
         ExcelExportModel data = new ExcelExportModel(new Date(), String.valueOf(RandomUtil.randomInt()),
-                BigDecimal.valueOf(RandomUtil.randomDouble()), String.valueOf(RandomUtil.randomChinese())+ RandomUtil.randomChinese() + RandomUtil.randomChinese() + RandomUtil.randomChinese()
+                BigDecimal.valueOf(RandomUtil.randomDouble()), String.valueOf(RandomUtil.randomChinese()) + RandomUtil.randomChinese() + RandomUtil.randomChinese() + RandomUtil.randomChinese()
         );
         return data;
 

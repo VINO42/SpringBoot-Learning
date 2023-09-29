@@ -47,14 +47,14 @@ public class WebSocketSessionLoadBalancer implements ReactorServiceInstanceLoadB
         String instancesId = strings.get(0);
 
         if (WEB_SOCKET_SERVICE_NAME.equals(instancesId)) {
-        // 获取需要参与哈希的字段，此项目为 userId
-        final String userIdFromRequest = getUserIdFromRequest(context);
-        if (context != null) {
-            if (this.serviceInstanceListSupplierProvider != null) {
-                ServiceInstanceListSupplier supplier = this.serviceInstanceListSupplierProvider.getIfAvailable(NoopServiceInstanceListSupplier::new);
-                return ((Flux) supplier.get()).next().map(list -> getInstanceResponse((List<ServiceInstance>) list, instancesId, userIdFromRequest));
+            // 获取需要参与哈希的字段，此项目为 userId
+            final String userIdFromRequest = getUserIdFromRequest(context);
+            if (context != null) {
+                if (this.serviceInstanceListSupplierProvider != null) {
+                    ServiceInstanceListSupplier supplier = this.serviceInstanceListSupplierProvider.getIfAvailable(NoopServiceInstanceListSupplier::new);
+                    return ((Flux) supplier.get()).next().map(list -> getInstanceResponse((List<ServiceInstance>) list, instancesId, userIdFromRequest));
+                }
             }
-        }
 
         }
         return choose();

@@ -12,7 +12,7 @@ import java.nio.charset.StandardCharsets;
  * @Created :   2023/8/31 21:56
  * @Compiler :  jdk 17
  * @Author :    VINO
- * @Email : 
+ * @Email :
  * @Copyright : VINO
  * @Decription : gson序列化实现
  * =====================================================================================

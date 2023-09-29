@@ -13,7 +13,7 @@ import org.apache.poi.ss.util.CellRangeAddress;
  * rowNum:表示要冻结的行数；
  * firstCellNum:表示被固定列右边第一列的列号；
  * firstRollNum :表示被固定行下边第一列的行号;
- *
+ * <p>
  * 举例：
  * CreateFreezePane(0,1,0,1):冻结第一行,冻结行下侧第一行的左边框显示“2”
  * CreateFreezePane(1,0,1,0):冻结第一列，冻结列右侧的第一列为B列

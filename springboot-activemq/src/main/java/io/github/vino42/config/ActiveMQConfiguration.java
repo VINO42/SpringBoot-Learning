@@ -16,7 +16,7 @@ import org.springframework.jms.config.JmsListenerContainerFactory;
  * @Created :   2022/3/21 22:04
  * @Compiler :  jdk 11
  * @Author :    VINO
- * @Email : 
+ * @Email :
  * @Copyright : VINO
  * @Decription :
  * =====================================================================================

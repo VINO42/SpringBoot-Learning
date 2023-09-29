@@ -32,13 +32,14 @@ public class TestController {
     ISysUserService sysUserService;
 
     @RequestMapping("/a")
-    public List<SysAccountEntity> testAccount(){
-       List<SysAccountEntity> list= sysAccountService.list();
-    return  list;
+    public List<SysAccountEntity> testAccount() {
+        List<SysAccountEntity> list = sysAccountService.list();
+        return list;
     }
+
     @RequestMapping("/u")
-    public List<SysUserEntity> testUser(){
-        List<SysUserEntity> list= sysUserService.list();
-        return  list;
+    public List<SysUserEntity> testUser() {
+        List<SysUserEntity> list = sysUserService.list();
+        return list;
     }
 }

@@ -69,9 +69,9 @@ public class NettyHttpServerHandler extends SimpleChannelInboundHandler<HttpObje
                     if (HttpMethod.POST.name().intern().equals(method.name().intern())) {
                         fullRequest = (FullHttpRequest) httpObject;
                         Object o = handleWithContentType(headers, fullRequest, meta);
-                        if (o!=null){
+                        if (o != null) {
                             resultObj = ReflectUtil.invoke(bean, meta.getMethod(), o);
-                        }else{
+                        } else {
                             resultObj = ReflectUtil.invoke(bean, meta.getMethod());
                         }
                     } else if (HttpMethod.GET.name().intern().equalsIgnoreCase(method.name().intern())) {
@@ -135,11 +135,11 @@ public class NettyHttpServerHandler extends SimpleChannelInboundHandler<HttpObje
         //可以使用HttpJsonDecoder
         if (APPLICATION_JSON_VALUE.equalsIgnoreCase(contentType)) {
             String jsonStr = fullRequest.content().toString(StandardCharsets.UTF_8);
-            if (meta.getParamaClaz()!=null){
+            if (meta.getParamaClaz() != null) {
                 Object obj = GSON.fromJson(jsonStr, meta.getParamaClaz());
                 return obj;
-            }else{
-                return  null;
+            } else {
+                return null;
             }
 //            for (Map.Entry<String, JsonElement> item : obj.entrySet()) {
 //                LOGGER.info(item.getKey() + "=" + item.getValue().toString());

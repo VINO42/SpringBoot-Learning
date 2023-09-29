@@ -35,10 +35,10 @@ public final class ResultMapper {
     /**
      * Wrap.
      *
-     * @param <E>         the element type
-     * @param status      the status
-     * @param message     the message
-     * @param o           the o
+     * @param <E>     the element type
+     * @param status  the status
+     * @param message the message
+     * @param o       the o
      * @return the wrapper
      */
     public static <E> ServiceResponseResult<E> wrap(int status, String message, E o) {

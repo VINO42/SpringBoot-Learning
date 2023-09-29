@@ -19,7 +19,7 @@ import java.time.LocalDateTime;
  * @Author :    vino
  * @Copyright : vino
  * @Decription : 账号表 实体类。
- * @Since:  2023-09-03
+ * @Since: 2023-09-03
  * =====================================================================================
  */
 @Data
@@ -29,7 +29,7 @@ import java.time.LocalDateTime;
 @Accessors(chain = true)
 @EqualsAndHashCode(callSuper = true)
 @Table(value = "sys_account")
-public class SysAccountEntity extends Model<SysAccountEntity>  implements Serializable {
+public class SysAccountEntity extends Model<SysAccountEntity> implements Serializable {
 
 
     /**

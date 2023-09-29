@@ -10,28 +10,30 @@ import org.apache.poi.ss.usermodel.Cell;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
- 
+
 /**
  * Description 自适应列宽
  *
  * @ClassName AutoHeadColumnWidthStyleStrategy
  * @date 2022.10.11 17:50
  */
-public class AutoHeadColumnWidthStyleStrategy extends AbstractColumnWidthStyleStrategy  {
- 
+public class AutoHeadColumnWidthStyleStrategy extends AbstractColumnWidthStyleStrategy {
+
     private static final int MAX_COLUMN_WIDTH = 255;
     private Map<Integer, Map<Integer, Integer>> CACHE = new HashMap(8);
     // 保底宽度
     private static final int COLUMN_WIDTH = 20;
-    public AutoHeadColumnWidthStyleStrategy() {}
- 
+
+    public AutoHeadColumnWidthStyleStrategy() {
+    }
+
     @Override
     protected void setColumnWidth(WriteSheetHolder writeSheetHolder, List<WriteCellData<?>> cellDataList, Cell cell,
-        Head head, Integer relativeRowIndex, Boolean isHead) {
+                                  Head head, Integer relativeRowIndex, Boolean isHead) {
         boolean needSetWidth = isHead && cell.getRowIndex() != 0;
         if (needSetWidth) {
             Map<Integer, Integer> maxColumnWidthMap = CACHE.computeIfAbsent(writeSheetHolder.getSheetNo(), k -> new HashMap<>());
- 
+
             Integer columnWidth = this.dataLength(cellDataList, cell, isHead);
             if (columnWidth > 0) {
                 if (columnWidth > MAX_COLUMN_WIDTH) {
@@ -39,7 +41,7 @@ public class AutoHeadColumnWidthStyleStrategy extends AbstractColumnWidthStyleSt
                 } else {
                     if (columnWidth < COLUMN_WIDTH) {
                         //小于基础跨度的时候略加宽
-                        columnWidth = columnWidth +3;
+                        columnWidth = columnWidth + 3;
                     }
                 }
                 Integer maxColumnWidth = maxColumnWidthMap.get(cell.getColumnIndex());
@@ -53,7 +55,7 @@ public class AutoHeadColumnWidthStyleStrategy extends AbstractColumnWidthStyleSt
             }
         }
     }
- 
+
     private Integer dataLength(List<WriteCellData<?>> cellDataList, Cell cell, Boolean isHead) {
         if (isHead) {
             return cell.getStringCellValue().getBytes().length;
@@ -74,5 +76,5 @@ public class AutoHeadColumnWidthStyleStrategy extends AbstractColumnWidthStyleSt
                 return -1;
         }
     }
- 
+
 }

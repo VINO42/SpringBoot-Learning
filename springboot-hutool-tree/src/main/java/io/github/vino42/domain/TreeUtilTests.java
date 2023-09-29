@@ -12,7 +12,7 @@ import java.util.List;
  * @Created :   2023/3/11 21:27
  * @Compiler :  jdk 11
  * @Author :    VINO
- * @Email : 
+ * @Email :
  * @Copyright : VINO
  * @Decription :
  * =====================================================================================
@@ -102,18 +102,18 @@ public class TreeUtilTests {
 //        System.out.println(JSONUtil.toJsonStr(treeNodes));
     }
 
-    private static void countSum(List<Tree<Integer>> treeNodes,Integer total) {
+    private static void countSum(List<Tree<Integer>> treeNodes, Integer total) {
 
         for (Tree<Integer> treeNode : treeNodes) {
             if (treeNode.getChildren() != null && treeNode.getChildren().size() > 0) {
                 Integer count = (Integer) treeNode.getOrDefault("count", 0);
                 count += treeNode.getChildren().size();
                 treeNode.putExtra("count", count);
-                total+=count;
-                if (treeNode.getParent().getParentId()==null){
-                    treeNode.getParent().putExtra("count",total);
+                total += count;
+                if (treeNode.getParent().getParentId() == null) {
+                    treeNode.getParent().putExtra("count", total);
                 }
-                countSum(treeNode.getChildren(),total);
+                countSum(treeNode.getChildren(), total);
             }
         }
     }

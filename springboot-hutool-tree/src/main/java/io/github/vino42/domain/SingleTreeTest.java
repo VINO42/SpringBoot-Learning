@@ -16,7 +16,7 @@ import java.util.stream.Collectors;
  * @Created :   2023/6/13 21:46
  * @Compiler :  jdk 11
  * @Author :    VINO
- * @Email : 
+ * @Email :
  * @Copyright : VINO
  * @Decription :
  * =====================================================================================
@@ -52,24 +52,24 @@ public class SingleTreeTest {
         d5.setDeptId(5L);
         d5.setLevel(5);
 
-        List<Dept> depts= Lists.newArrayList();
+        List<Dept> depts = Lists.newArrayList();
 //        depts.add(d1);
 //        depts.add(d2);
         depts.add(d3);
         depts.add(d4);
 //        depts.add(d5);
-        DeptVo top=new DeptVo();
+        DeptVo top = new DeptVo();
         top.setParentId(null);
         List<DeptVo> vos = BeanUtil.copyToList(depts, DeptVo.class);
-         //非顶级节点树
+        //非顶级节点树
         List<DeptVo> notTop = vos.stream().filter(d -> d.getParentId() != null).collect(Collectors.toList());
         //按父级id 进行分组
-        Map<Long,List<DeptVo>> collect2= notTop.stream().collect(Collectors.groupingBy(node -> node.getParentId()));
+        Map<Long, List<DeptVo>> collect2 = notTop.stream().collect(Collectors.groupingBy(node -> node.getParentId()));
 
         //循环设置对应的子节点（根据id = pid）
         vos.forEach(node -> {
             List<DeptVo> deptVos = collect2.get(node.getDeptId());
-            if (CollUtil.isNotEmpty(deptVos)){
+            if (CollUtil.isNotEmpty(deptVos)) {
                 //
                 DeptVo deptVo = deptVos.get(0);
                 node.setNode(deptVo);
@@ -77,11 +77,11 @@ public class SingleTreeTest {
         });
         DeptVo deptVo = vos.stream().min(Comparator.comparing(DeptVo::getLevel)).get();
         //只留下顶级节点，自动成树形结构
-        List<DeptVo> collect3= vos.stream().filter(node -> node.getLevel() == deptVo.getLevel() ).collect(Collectors.toList());
-        if (collect3.isEmpty()){
-             System.out.println(JSONUtil.toJsonStr(collect3));
+        List<DeptVo> collect3 = vos.stream().filter(node -> node.getLevel() == deptVo.getLevel()).collect(Collectors.toList());
+        if (collect3.isEmpty()) {
+            System.out.println(JSONUtil.toJsonStr(collect3));
 
-        }else{
+        } else {
 
             System.out.println(JSONUtil.toJsonStr(collect3.get(0)));
         }

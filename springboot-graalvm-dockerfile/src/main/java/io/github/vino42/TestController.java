@@ -15,12 +15,12 @@ import org.springframework.web.bind.annotation.RestController;
  * =====================================================================================
  */
 @RestController
-@Slf4j  (topic = "test")
+@Slf4j(topic = "test")
 public class TestController {
 
     @RequestMapping("/hello")
-    public  String test(){
+    public String test() {
         log.info("request for native ");
-        return  "hello native";
+        return "hello native";
     }
 }
