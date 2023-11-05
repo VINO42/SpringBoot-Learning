@@ -18,6 +18,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
 import java.net.URLEncoder;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
@@ -46,6 +47,25 @@ public class ExcelController {
         // 这里URLEncoder.encode可以防止中文乱码 当然和easyexcel没有关系
         response.setHeader("Content-disposition", "attachment;filename*=utf-8''" + fileName + ".xlsx");
         EasyExcel.write(response.getOutputStream(), ExcelExportModel.class).sheet(sheetName).doWrite(data());
+    }
+
+    @RequestMapping("/template")
+    public void template(HttpServletResponse response) throws IOException {
+        String sheetName = DateUtil.today();
+
+        String fileName = URLEncoder.encode("我的测试Excel下载_" + DateUtil.today(), "UTF-8");
+        response.setContentType("application/vnd.openxmlformats-officedocument.spreadsheetml.sheet");
+        response.setCharacterEncoding("utf-8");
+        // 这里URLEncoder.encode可以防止中文乱码 当然和easyexcel没有关系
+        response.setHeader("Content-disposition", "attachment;filename*=utf-8''" + fileName + ".xlsx");
+        // 这里需要设置不关闭流
+        EasyExcel.write(response.getOutputStream(), ExcelExportModel.class)
+                .head(ExcelExportModel.class)
+                .registerWriteHandler(new AutoHeadColumnWidthStyleStrategy())
+                .registerWriteHandler(new FreezeAndFilterHandler())
+                .registerWriteHandler(new CustomColumnStyleStrategy())
+                .autoCloseStream(Boolean.TRUE).sheet("测试")
+                .doWrite(new ArrayList<>());
     }
 
     @RequestMapping("/a")
