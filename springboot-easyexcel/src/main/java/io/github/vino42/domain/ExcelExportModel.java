@@ -3,6 +3,9 @@ package io.github.vino42.domain;
 import cn.hutool.core.util.RandomUtil;
 import com.alibaba.excel.annotation.ExcelProperty;
 import com.alibaba.excel.annotation.write.style.ColumnWidth;
+import io.github.vino42.config.ObjectConverter;
+import io.github.vino42.config.StatusEnum;
+import io.github.vino42.config.StatusEnumConverter;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
@@ -20,21 +23,48 @@ import java.util.Date;
  * =====================================================================================
  */
 public class ExcelExportModel implements Serializable {
-    @ExcelProperty(value = "创建日期", index = 0)
+    @ExcelProperty(value = "创建日期")
     private Date createDate;
-    @ExcelProperty(value = "年龄", index = 1)
+    @ExcelProperty(value = "年龄")
     private String age;
-    @ExcelProperty(value = "价格", index = 2)
+    @ExcelProperty(value = "价格")
     private BigDecimal price;
-    @ExcelProperty(value = "名称", index = 3)
+    @ExcelProperty(value = "名称")
     @ColumnWidth(40)
     private String name;
+    @ExcelProperty(value = "状态", converter = ObjectConverter.class)
+    private Integer status;
 
-    public ExcelExportModel(Date createDate, String age, BigDecimal price, String name) {
+    @ExcelProperty(value = "状态1", converter = StatusEnumConverter.class)
+    private StatusEnum status1;
+
+    public ExcelExportModel() {
+    }
+
+    public StatusEnum getStatus1() {
+        return status1;
+    }
+
+    public void setStatus1(StatusEnum status1) {
+        this.status1 = status1;
+    }
+
+    public ExcelExportModel(Date createDate, String age, BigDecimal price, String name, Integer status, StatusEnum status1) {
         this.createDate = createDate;
         this.age = age;
         this.price = price;
         this.name = name;
+        this.status = status;
+        this.status1 = status1;
+    }
+
+
+    public Integer getStatus() {
+        return status;
+    }
+
+    public void setStatus(Integer status) {
+        this.status = status;
     }
 
     @Override
@@ -44,6 +74,8 @@ public class ExcelExportModel implements Serializable {
                 ", age='" + age + '\'' +
                 ", price=" + price +
                 ", name='" + name + '\'' +
+                ", status=" + status +
+                ", status1=" + status1 +
                 '}';
     }
 
@@ -82,6 +114,7 @@ public class ExcelExportModel implements Serializable {
     public static ExcelExportModel getData() {
         ExcelExportModel data = new ExcelExportModel(new Date(), String.valueOf(RandomUtil.randomInt()),
                 BigDecimal.valueOf(RandomUtil.randomDouble()), String.valueOf(RandomUtil.randomChinese()) + RandomUtil.randomChinese() + RandomUtil.randomChinese() + RandomUtil.randomChinese()
+                , RandomUtil.randomInt(2), StatusEnum.getInstance(RandomUtil.randomInt(2))
         );
         return data;
 

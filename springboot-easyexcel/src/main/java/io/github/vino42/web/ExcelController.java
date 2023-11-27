@@ -104,7 +104,7 @@ public class ExcelController {
 
     private List<ExcelExportModel> data() {
         List<ExcelExportModel> datas = Lists.newArrayList();
-        for (int i = 0; i < 1000; i++) {
+        for (int i = 0; i < 3; i++) {
             datas.add(ExcelExportModel.getData());
         }
 
@@ -114,7 +114,7 @@ public class ExcelController {
 
     @RequestMapping("/upload")
     public String upload(MultipartFile file) throws IOException {
-        EasyExcel.read(file.getInputStream(), UploadData.class, new UploadDataListener()).sheet().doRead();
+        EasyExcel.read(file.getInputStream(), ExcelExportModel.class, new UploadDataListener()).sheet().doRead();
         return "success";
     }
 

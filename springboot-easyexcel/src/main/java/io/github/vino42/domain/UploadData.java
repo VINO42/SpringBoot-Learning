@@ -1,5 +1,8 @@
 package io.github.vino42.domain;
 
+import com.alibaba.excel.annotation.ExcelProperty;
+import io.github.vino42.config.ObjectConverter;
+
 import java.math.BigDecimal;
 import java.util.Date;
 
@@ -19,8 +22,8 @@ public class UploadData {
     private String age;
     private BigDecimal price;
     private String name;
-
-
+    @ExcelProperty(value = "状态", index = 4, converter = ObjectConverter.class)
+    private String status;
     @Override
     public String toString() {
         return "ExcelExportModel{" +
@@ -29,6 +32,14 @@ public class UploadData {
                 ", price=" + price +
                 ", name='" + name + '\'' +
                 '}';
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
     }
 
     public Date getCreateDate() {

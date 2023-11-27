@@ -1,9 +1,11 @@
 package io.github.vino42.web;
 
+import cn.hutool.json.JSONUtil;
 import com.alibaba.excel.context.AnalysisContext;
 import com.alibaba.excel.metadata.data.ReadCellData;
 import com.alibaba.excel.read.listener.ReadListener;
 import com.alibaba.excel.util.ListUtils;
+import io.github.vino42.domain.ExcelExportModel;
 import io.github.vino42.domain.UploadData;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -22,14 +24,14 @@ import java.util.Map;
  * @Decription :
  * =====================================================================================
  */
-public class UploadDataListener implements ReadListener<UploadData> {
+public class UploadDataListener implements ReadListener<ExcelExportModel> {
     private static final Logger LOGGER = LoggerFactory.getLogger(UploadDataListener.class);
     private static final int BATCH_COUNT = 3;
 
-    private List<UploadData> cachedDataList = ListUtils.newArrayListWithExpectedSize(BATCH_COUNT);
+    private List<ExcelExportModel> cachedDataList = ListUtils.newArrayListWithExpectedSize(BATCH_COUNT);
 
     @Override
-    public void invoke(UploadData data, AnalysisContext analysisContext) {
+    public void invoke(ExcelExportModel data, AnalysisContext analysisContext) {
         LOGGER.info("{}", data);
         cachedDataList.add(data);
         if (cachedDataList.size() >= BATCH_COUNT) {
@@ -41,6 +43,7 @@ public class UploadDataListener implements ReadListener<UploadData> {
     }
 
     private void saveData() {
+        System.out.println(JSONUtil.toJsonStr(cachedDataList));
         LOGGER.info("save data to mysql batchCount{}", cachedDataList.size());
     }
 
