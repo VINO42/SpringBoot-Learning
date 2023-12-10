@@ -1,0 +1,11 @@
+GET http://localhost:8080/sse/stream
+Accept: text/event-stream
+Cache-Control: no-cache
+Connection: keep-alive
+###
+
+GET http://localhost:8080/sse/get
+Accept: text/event-stream
+Cache-Control: no-cache
+Connection: keep-alive
+###
