@@ -8,6 +8,13 @@
         <result column="name" property="name" />
         <result column="parent_id" property="parentId" />
     </resultMap>
+    <resultMap id="ResourceMap" type="io.github.vino42.domain.ResourceDTO">
+        <id column="id" property="id" />
+        <result column="name" property="name" />
+        <result column="parent_id" property="parentId" />
+        <collection property="children" javaType="java.util.ArrayList" column="id" select="selectChildTree">
+        </collection>
+    </resultMap>
 
     <!-- 通用查询结果列 -->
     <sql id="Base_Column_List">
@@ -30,11 +37,24 @@
 
         UNION ALL
         SELECT T2.id, T2.name, T2.parent_id
-        from resource T2, recursion T3
-        WHERE T2.parent_id=T3.id
+        from resource T2 inner join recursion T3
+        on T2.parent_id=T3.id
         )
         SELECT T.id, T.name, T.parent_id
         FROM recursion T
+    </select>
+    <select id="recursiveKeyWord" resultMap="ResourceMap"
+            parameterType="java.lang.String">
+         select * from  resource
+        <where>
+            <if test=" keyword !=null and keyword!=''">
+                resource.name like concat('%',#{keyword},'%')
+            </if>
+        </where>
+    </select>
+
+    <select id="selectChildTree" resultMap="ResourceMap">
+        select * from  resource where parent_id=#{id}
     </select>
 
 </mapper>

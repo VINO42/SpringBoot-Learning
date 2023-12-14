@@ -1,5 +1,6 @@
 package io.github.vino42.service.impl;
 
+import io.github.vino42.domain.ResourceDTO;
 import io.github.vino42.domain.entity.Resource;
 import io.github.vino42.domain.mapper.ResourceMapper;
 import io.github.vino42.service.IResourceService;
@@ -22,5 +23,10 @@ public class ResourceServiceImpl extends ServiceImpl<ResourceMapper, Resource> i
     @Override
     public List<Resource> recursive(List<Integer> ids) {
         return this.baseMapper.recursive(ids);
+    }
+
+    @Override
+    public List<ResourceDTO> recursive(String keyword) {
+        return this.baseMapper.recursiveKeyWord(keyword);
     }
 }
