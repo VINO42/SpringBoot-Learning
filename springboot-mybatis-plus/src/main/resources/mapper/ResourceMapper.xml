@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="io.github.vino42.domain.mapper.ResourceMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="io.github.vino42.domain.entity.Resource">
+        <id column="id" property="id" />
+        <result column="name" property="name" />
+        <result column="parent_id" property="parentId" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, name, parent_id
+    </sql>
+    <select id="recursive" resultType="io.github.vino42.domain.entity.Resource"
+            parameterType="java.util.List">
+        WITH RECURSIVE recursion (id, name, parent_id) AS
+        (
+        SELECT T1.id, T1.name, T1.parent_id
+        from resource T1
+        <where>
+            <if test="ids !=null and ids.size()!=0">
+                and         T1.id in
+                <foreach collection="ids" item="item" close=")" open="(" separator=",">
+                    #{item}
+                </foreach>
+            </if>
+        </where>
+
+        UNION ALL
+        SELECT T2.id, T2.name, T2.parent_id
+        from resource T2, recursion T3
+        WHERE T2.parent_id=T3.id
+        )
+        SELECT T.id, T.name, T.parent_id
+        FROM recursion T
+    </select>
+
+</mapper>

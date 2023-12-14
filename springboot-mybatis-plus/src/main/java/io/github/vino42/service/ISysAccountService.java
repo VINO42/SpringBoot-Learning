@@ -1,6 +1,7 @@
 package io.github.vino42.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
+import io.github.vino42.domain.InputDto;
 import io.github.vino42.domain.entity.SysAccountEntity;
 
 /**
@@ -16,4 +17,7 @@ import io.github.vino42.domain.entity.SysAccountEntity;
  */
 public interface ISysAccountService extends IService<SysAccountEntity> {
 
+    boolean addInput(InputDto inputDto);
+
+    void add(SysAccountEntity account);
 }
