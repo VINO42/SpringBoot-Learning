@@ -82,7 +82,7 @@ public class ResourceController {
         treeNodeConfig.setIdKey("id");
         treeNodeConfig.setParentIdKey("parentId");
         treeNodeConfig.setChildrenKey("children");
-        List<Integer> parentIds = search.stream().distinct().map(Resource::getParentId).toList();
+        List<Integer> parentIds = search.stream().map(Resource::getParentId).distinct().toList();
 
         List<Tree<Integer>> list1 = parentIds.stream().map(id -> {
 
