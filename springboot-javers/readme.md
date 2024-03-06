@@ -35,11 +35,7 @@
    
     @Id
     声明一个实体的 id 属性,没有id无法比对出是否为新增对象
-    
-    @DiffIgnore
-    比对时可以忽略的属性
-    
-    @DiffInclude
+
     @ShallowReference
     声明一个属性为浅引用。只能用于实体类型属性。目标 Entity 实例的所有属性(Id 除外)都被忽略。
     @PropertyName 
