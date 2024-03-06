@@ -12,7 +12,7 @@
    * Simple：主要优点是速度快，计算复杂度线性，主要缺点是输出过于冗长
    * Set: 如果您不关心集合的顺序，请选择 Set 算法。在进行比较之前，JaVers 会将所有 list 转换为 set。此算法产生最简洁的输出(只有 ValueAdded 和 ValueRemoved)
  * javers-spring 支持spring-data 相关集成
- *  javers.compare对象比较
+ * javers.compare对象比较
  * javers.compareCollections 集合比较
  * implements CustomValueComparator<BigDecimal> 实现自定义比较器
  * 注解
