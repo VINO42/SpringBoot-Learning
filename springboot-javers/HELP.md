@@ -2,6 +2,7 @@
  * javers 是一个数据审计框架 springboot-javers 提供版本控制 事务管理 合并冲突 数据库迁移等
  * 最常见的应用场景是 对比两个对象的diff 属性值的diff
  * 对比算法
+
    ```
    Javers javers = JaversBuilder.javers()
              .withListCompareAlgorithm(LEVENSHTEIN_DISTANCE)
