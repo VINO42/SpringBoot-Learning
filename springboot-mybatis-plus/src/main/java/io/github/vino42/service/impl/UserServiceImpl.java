@@ -39,4 +39,10 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
         User optById = userService.getById(123);
         System.out.println(optById);
     }
+
+    @Override
+    public void select() {
+        User user =new User();
+        user.setId(123);
+    }
 }

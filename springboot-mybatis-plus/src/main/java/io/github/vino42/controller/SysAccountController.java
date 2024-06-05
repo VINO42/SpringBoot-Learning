@@ -51,4 +51,8 @@ public class SysAccountController {
     public ServiceResponseResult delete(@PathVariable Long id) {
         return ResultMapper.ok(sysAccountService.removeById(id));
     }
+    @GetMapping(value = "/select")
+    public ServiceResponseResult select() {
+        return ResultMapper.ok(sysAccountService.select());
+    }
 }

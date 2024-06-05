@@ -20,4 +20,6 @@ public interface ISysAccountService extends IService<SysAccountEntity> {
     boolean addInput(InputDto inputDto);
 
     void add(SysAccountEntity account);
+
+    Object select();
 }
