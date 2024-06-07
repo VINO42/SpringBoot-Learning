@@ -1,8 +1,8 @@
 package io.github.vino42.domain.mapper;
 
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import io.github.vino42.domain.ResourceDTO;
 import io.github.vino42.domain.entity.Resource;
-import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 

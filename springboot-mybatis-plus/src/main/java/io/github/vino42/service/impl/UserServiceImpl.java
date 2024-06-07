@@ -1,15 +1,12 @@
 package io.github.vino42.service.impl;
 
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import io.github.vino42.domain.entity.User;
 import io.github.vino42.domain.mapper.UserMapper;
 import io.github.vino42.service.IUserService;
-import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.aop.framework.AopContext;
-import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
-import java.util.Optional;
 
 /**
  * <p>

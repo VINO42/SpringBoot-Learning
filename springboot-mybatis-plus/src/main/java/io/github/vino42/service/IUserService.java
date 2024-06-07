@@ -1,7 +1,7 @@
 package io.github.vino42.service;
 
-import io.github.vino42.domain.entity.User;
 import com.baomidou.mybatisplus.extension.service.IService;
+import io.github.vino42.domain.entity.User;
 
 /**
  * <p>

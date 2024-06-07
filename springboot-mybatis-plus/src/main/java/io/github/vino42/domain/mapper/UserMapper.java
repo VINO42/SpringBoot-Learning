@@ -1,7 +1,7 @@
 package io.github.vino42.domain.mapper;
 
-import io.github.vino42.domain.entity.User;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import io.github.vino42.domain.entity.User;
 import org.apache.ibatis.annotations.Mapper;
 
 /**
