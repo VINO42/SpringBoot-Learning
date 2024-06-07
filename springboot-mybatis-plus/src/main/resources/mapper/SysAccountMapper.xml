@@ -54,4 +54,9 @@
          ON C.mobile = a.mobile
         AND C.`password` = a.`password`
     </select>
+    <select id="selectListP" resultType="io.github.vino42.domain.entity.SysAccountEntity">
+        select * from sys_account
+        where
+        mobile like concat('%',#{p.mobile},'%')
+    </select>
 </mapper>

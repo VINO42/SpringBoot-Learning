@@ -21,5 +21,7 @@ public interface ISysAccountService extends IService<SysAccountEntity> {
 
     void add(SysAccountEntity account);
 
-    Object select();
+    Object select(SysAccountEntity p);
+    Object select( );
+
 }

@@ -2,7 +2,6 @@ package io.github.vino42.service.impl;
 
 import cn.hutool.json.JSONUtil;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.fasterxml.jackson.annotation.JsonUnwrapped;
 import com.google.common.collect.Lists;
 import io.github.vino42.domain.InputDto;
 import io.github.vino42.domain.SysAccountDTO;
@@ -76,5 +75,10 @@ public class SysAccountServiceImpl extends ServiceImpl<SysAccountMapper, SysAcco
         List<SysAccountDTO> sysAccountDTOS = this.baseMapper.selectListCon(list);
         System.out.println(JSONUtil.toJsonStr(sysAccountDTOS));
         return sysAccountDTOS;
+    }
+
+    @Override
+    public List<SysAccountEntity> select(SysAccountEntity p) {
+        return  this.baseMapper.selectListP(p);
     }
 }

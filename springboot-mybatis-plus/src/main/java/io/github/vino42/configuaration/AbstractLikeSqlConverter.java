@@ -1,9 +1,9 @@
 package io.github.vino42.configuaration;
 
+import cn.hutool.core.bean.BeanUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 
-import java.beans.IntrospectionException;
 import java.beans.PropertyDescriptor;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
@@ -147,7 +147,7 @@ public abstract class AbstractLikeSqlConverter<T> {
             return;
         }
         try {
-            PropertyDescriptor descriptor = new PropertyDescriptor(field, parameter.getClass());
+            PropertyDescriptor descriptor = BeanUtil.getPropertyDescriptor(parameter.getClass(), field);
             Method readMethod = descriptor.getReadMethod();
             Object param = readMethod.invoke(parameter);
             if (this.hasEscapeChar(param)) {
@@ -157,7 +157,7 @@ public abstract class AbstractLikeSqlConverter<T> {
                 int index = field.indexOf(MYBATIS_PLUS_WRAPPER_SEPARATOR) + 1;
                 this.resolveObj(field.substring(index), param);
             }
-        } catch (IntrospectionException | IllegalAccessException | InvocationTargetException e) {
+        } catch (IllegalAccessException | InvocationTargetException e) {
             log.error("反射 {} 的 {} get/set方法出现异常", parameter, field, e);
         }
     }

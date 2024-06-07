@@ -1,6 +1,5 @@
 package io.github.vino42.controller;
 
-import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
@@ -54,5 +53,9 @@ public class SysAccountController {
     @GetMapping(value = "/select")
     public ServiceResponseResult select() {
         return ResultMapper.ok(sysAccountService.select());
+    }
+    @PostMapping(value = "/selectp")
+    public ServiceResponseResult select(@RequestBody SysAccountEntity sysAccountEntity) {
+        return ResultMapper.ok(sysAccountService.select(sysAccountEntity));
     }
 }

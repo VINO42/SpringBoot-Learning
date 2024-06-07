@@ -28,13 +28,12 @@ import com.baomidou.mybatisplus.extension.activerecord.Model;
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
-@Accessors(chain = true)
 @TableName("sys_account")
 public class SysAccountEntity extends Model<SysAccountEntity> implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    /**
+    /**1
      * 主键
      */
     @TableId(value = "id", type = IdType.INPUT)

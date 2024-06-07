@@ -22,4 +22,6 @@ import java.util.List;
 @Mapper
 public interface SysAccountMapper extends BaseMapper<SysAccountEntity> {
     List<SysAccountDTO> selectListCon(@Param("datas") List<SysAccountDTO> list);
+
+    List<SysAccountEntity> selectListP(@Param("p") SysAccountEntity p);
 }

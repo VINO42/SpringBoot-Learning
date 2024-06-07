@@ -1,5 +1,6 @@
 package io.github.vino42.configuaration;
 
+import com.baomidou.mybatisplus.autoconfigure.ConfigurationCustomizer;
 import com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor;
 import com.baomidou.mybatisplus.extension.plugins.inner.BlockAttackInnerInterceptor;
 import com.baomidou.mybatisplus.extension.plugins.inner.PaginationInnerInterceptor;
@@ -19,15 +20,19 @@ import org.springframework.context.annotation.Configuration;
  * @Decription :
  * =====================================================================================
  */
-@Configuration(proxyBeanMethods = false)
+@Configuration
 public class CustomMybatisPlusConfiguration {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(CustomMybatisPlusConfiguration.class);
 
     @Bean
-    public MybatisLikeSqlEscapeInterceptor mybatisSqlInterceptor() {
-        return new MybatisLikeSqlEscapeInterceptor();
+    public ConfigurationCustomizer mybatisConfigurationCustomizer() {
+        return configuration -> {
+            // 创建并添加拦截器实例到配置中
+            configuration.addInterceptor(new MybatisLikeSqlEscapeInterceptor());
+        };
     }
+
     @Bean
     public MybatisPlusInterceptor mybatisPlusInterceptor() {
         /**

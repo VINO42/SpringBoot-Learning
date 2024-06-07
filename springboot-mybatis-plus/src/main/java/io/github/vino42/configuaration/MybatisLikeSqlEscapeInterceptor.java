@@ -2,6 +2,7 @@ package io.github.vino42.configuaration;
 
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
+import org.apache.ibatis.cache.CacheKey;
 import org.apache.ibatis.executor.Executor;
 import org.apache.ibatis.mapping.BoundSql;
 import org.apache.ibatis.mapping.MappedStatement;
@@ -13,10 +14,13 @@ import java.util.*;
 
 /**
  * mybatis/mybatis-plus模糊查询语句特殊字符转义拦截器
- *
+ * https://blog.csdn.net/my_name_nb/article/details/123371345
  * @author lxw
  */
-@Intercepts({@Signature(type = Executor.class, method = "query", args = {MappedStatement.class, Object.class, RowBounds.class, ResultHandler.class})})
+@Intercepts({
+        @Signature(type = Executor.class, method = "query", args = {MappedStatement.class, Object.class, RowBounds.class, ResultHandler.class, CacheKey.class, BoundSql.class}),
+}
+)
 @Slf4j
 public class MybatisLikeSqlEscapeInterceptor implements Interceptor {
 
