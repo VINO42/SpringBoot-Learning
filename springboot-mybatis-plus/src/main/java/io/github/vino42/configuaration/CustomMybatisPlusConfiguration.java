@@ -2,7 +2,6 @@ package io.github.vino42.configuaration;
 
 import com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor;
 import com.baomidou.mybatisplus.extension.plugins.inner.BlockAttackInnerInterceptor;
-import com.baomidou.mybatisplus.extension.plugins.inner.IllegalSQLInnerInterceptor;
 import com.baomidou.mybatisplus.extension.plugins.inner.PaginationInnerInterceptor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -25,7 +24,10 @@ public class CustomMybatisPlusConfiguration {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(CustomMybatisPlusConfiguration.class);
 
-
+    @Bean
+    public MybatisLikeSqlEscapeInterceptor mybatisSqlInterceptor() {
+        return new MybatisLikeSqlEscapeInterceptor();
+    }
     @Bean
     public MybatisPlusInterceptor mybatisPlusInterceptor() {
         /**
