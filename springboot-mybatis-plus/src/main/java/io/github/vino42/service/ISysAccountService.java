@@ -4,6 +4,8 @@ import com.baomidou.mybatisplus.extension.service.IService;
 import io.github.vino42.domain.InputDto;
 import io.github.vino42.domain.entity.SysAccountEntity;
 
+import java.util.List;
+
 /**
  * =====================================================================================
  *
@@ -24,4 +26,5 @@ public interface ISysAccountService extends IService<SysAccountEntity> {
     Object select(SysAccountEntity p);
     Object select( );
 
+    List<SysAccountEntity> selectd();
 }

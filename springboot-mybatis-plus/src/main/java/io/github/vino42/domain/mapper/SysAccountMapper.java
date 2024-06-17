@@ -24,4 +24,8 @@ public interface SysAccountMapper extends BaseMapper<SysAccountEntity> {
     List<SysAccountDTO> selectListCon(@Param("datas") List<SysAccountDTO> list);
 
     List<SysAccountEntity> selectListP(@Param("p") SysAccountEntity p);
+
+    List<SysAccountEntity> selectd(@Param("data") String list);
+
+    List<SysAccountEntity> selectf(@Param("datas") List<String> list);
 }

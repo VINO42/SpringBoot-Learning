@@ -1,7 +1,9 @@
 package io.github.vino42.service.impl;
 
+import cn.hutool.core.util.StrUtil;
 import cn.hutool.json.JSONUtil;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.google.common.base.Joiner;
 import com.google.common.collect.Lists;
 import io.github.vino42.domain.InputDto;
 import io.github.vino42.domain.SysAccountDTO;
@@ -14,8 +16,11 @@ import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.Arrays;
 import java.util.List;
 import java.util.stream.IntStream;
+
+import static cn.hutool.core.text.StrPool.COMMA;
 
 /**
  * =====================================================================================
@@ -75,6 +80,16 @@ public class SysAccountServiceImpl extends ServiceImpl<SysAccountMapper, SysAcco
         List<SysAccountDTO> sysAccountDTOS = this.baseMapper.selectListCon(list);
         System.out.println(JSONUtil.toJsonStr(sysAccountDTOS));
         return sysAccountDTOS;
+    }
+
+    @Override
+    public List<SysAccountEntity> selectd() {
+        List<String> list = Arrays.asList("id", "org_id", "user_id", "mobile", "password", "avatar", "nick_name", "statu", "is_del");
+        String join = Joiner.on(COMMA).join(list);
+//        List<SysAccountEntity> result=  this.baseMapper.selectd(join);
+        List<SysAccountEntity> result=  this.baseMapper.selectf(list);
+
+        return result;
     }
 
     @Override

@@ -31,7 +31,9 @@
 
     <!-- 通用查询结果列 -->
     <sql id="Base_Column_List">
-            id, org_id, user_id, mobile, password, avatar, nick_name, statu, is_del, create_time, update_time, create_by, create_name, update_by, update_name, created_ip, last_signin_time, last_signin_ip, qq, wechat, dingtalk, weibo, baidu
+        id, org_id, user_id, mobile, password, avatar, nick_name, statu, is_del, create_time, update_time, create_by,
+        create_name, update_by, update_name, created_ip, last_signin_time, last_signin_ip, qq, wechat, dingtalk, weibo,
+        baidu
     </sql>
     <select id="selectListCon" resultType="io.github.vino42.domain.SysAccountDTO"
             parameterType="java.util.List">
@@ -48,15 +50,32 @@
         </foreach>) a left join
         (SELECT B.* FROM
         <foreach collection="datas" separator="union all " open="(" close=")" item="item">
-            select  #{item.mobile} as mobile ,#{item.password} as password,#{item.name} as name,#{item.age} as age
+            select #{item.mobile} as mobile ,#{item.password} as password,#{item.name} as name,#{item.age} as age
         </foreach>
-         AS B) as C
-         ON C.mobile = a.mobile
+        AS B) as C
+        ON C.mobile = a.mobile
         AND C.`password` = a.`password`
     </select>
     <select id="selectListP" resultType="io.github.vino42.domain.entity.SysAccountEntity">
         select * from sys_account
         where
         mobile like concat('%',#{p.mobile},'%')
+    </select>
+    <select id="selectd" resultType="io.github.vino42.domain.entity.SysAccountEntity"
+            parameterType="java.lang.String">
+        select ${data} from sys_account
+    </select>
+    <select id="selectf" resultType="io.github.vino42.domain.entity.SysAccountEntity"
+            parameterType="java.util.List">
+        select
+        <if test="datas !=null and datas.size()>0">
+            <foreach collection="datas" item="item" close="" open="" separator=",">
+                ${item}
+            </foreach>
+        </if>
+        <if test="datas==null or datas.size()==0">
+            *
+        </if>
+        from sys_account
     </select>
 </mapper>
