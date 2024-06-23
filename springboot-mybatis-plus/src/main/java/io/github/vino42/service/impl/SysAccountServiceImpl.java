@@ -8,6 +8,7 @@ import com.google.common.collect.Lists;
 import io.github.vino42.domain.InputDto;
 import io.github.vino42.domain.SysAccountDTO;
 import io.github.vino42.domain.entity.SysAccountEntity;
+import io.github.vino42.domain.entity.User;
 import io.github.vino42.domain.mapper.SysAccountMapper;
 import io.github.vino42.service.ISysAccountService;
 import io.github.vino42.service.IUserService;
@@ -90,6 +91,38 @@ public class SysAccountServiceImpl extends ServiceImpl<SysAccountMapper, SysAcco
         List<SysAccountEntity> result=  this.baseMapper.selectf(list);
 
         return result;
+    }
+
+    @Override
+    public void selecte() {
+        SysAccountDTO accountEntity1= new SysAccountDTO();
+        User user = new User();
+        user.setId(123131);
+        accountEntity1.setUser(user);
+        accountEntity1.setMobile("3454");
+        accountEntity1.setPassword("1");
+        accountEntity1.setName("a");
+        accountEntity1.setAge("1");
+        SysAccountDTO accountEntity2= new SysAccountDTO();
+        accountEntity2.setMobile("1888888888");
+        accountEntity2.setPassword("345");
+        accountEntity2.setName("b");
+        accountEntity2.setAge("2");
+        User user1 = new User();
+        user1.setId(456);
+        accountEntity2.setUser(user);
+        List<SysAccountDTO> list= Lists.newArrayList();
+        list.add(accountEntity1);
+        list.add(accountEntity2);
+        changeUser(list);
+        System.out.println(JSONUtil.toJsonPrettyStr(list));
+    }
+
+    private void changeUser(List<SysAccountDTO> list) {
+        for (SysAccountDTO sysAccountDTO : list) {
+            User user = sysAccountDTO.getUser();
+            user.setId(0001);
+        }
     }
 
     @Override

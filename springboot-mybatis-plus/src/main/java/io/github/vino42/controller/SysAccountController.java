@@ -62,4 +62,9 @@ public class SysAccountController {
     public ServiceResponseResult selectd() {
         return ResultMapper.ok(sysAccountService.selectd());
     }
+    @GetMapping(value = "/selecte")
+    public ServiceResponseResult selecte() {
+        sysAccountService.selecte();
+        return ResultMapper.ok();
+    }
 }

@@ -2,6 +2,7 @@ package io.github.vino42.domain;
 
 import com.baomidou.mybatisplus.annotation.FieldFill;
 import com.baomidou.mybatisplus.annotation.TableField;
+import io.github.vino42.domain.entity.User;
 import lombok.Data;
 
 import java.io.Serializable;
@@ -18,10 +19,10 @@ import java.time.LocalDateTime;
  * =====================================================================================
  */
 @Data
-public class SysAccountDTO  implements Serializable {
+public class SysAccountDTO implements Serializable {
 
     private static final long serialVersionUID = 1L;
-
+    private User user;
     /**
      * 主键
      */
