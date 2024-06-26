@@ -29,4 +29,6 @@ public interface ISysAccountService extends IService<SysAccountEntity> {
     List<SysAccountEntity> selectd();
 
     void selecte();
+
+    void selectf() throws InterruptedException;
 }

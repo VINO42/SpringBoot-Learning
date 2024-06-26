@@ -67,4 +67,9 @@ public class SysAccountController {
         sysAccountService.selecte();
         return ResultMapper.ok();
     }
+    @GetMapping(value = "/selectf")
+    public ServiceResponseResult selectf() throws InterruptedException {
+        sysAccountService.selectf();
+        return ResultMapper.ok();
+    }
 }
