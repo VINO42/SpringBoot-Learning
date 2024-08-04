@@ -1,6 +1,5 @@
 package io.github.vino42.service;
 
-import com.google.common.base.Preconditions;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import io.micrometer.common.util.StringUtils;
@@ -16,12 +15,10 @@ import org.springframework.data.redis.connection.RedisGeoCommands;
 import org.springframework.data.redis.connection.RedisGeoCommands.DistanceUnit;
 import org.springframework.data.redis.connection.RedisGeoCommands.GeoLocation;
 import org.springframework.data.redis.core.*;
+import org.springframework.data.redis.core.script.DefaultRedisScript;
 import org.springframework.stereotype.Component;
 
-import java.util.Collection;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 import java.util.concurrent.TimeUnit;
 
 @Component
@@ -501,14 +498,17 @@ public class RedisService<V> {
      * 向左边批量添加参数元素。
      *
      * <p>key values
+     *
+     * @return
      */
-    public void leftPushAll(String key, List<Object> values) {
+    public Long leftPushAll(String key, List<Object> values) {
         //        redisTemplate.opsForList().leftPushAll(key,"w","x","y");
-        redisTemplate.opsForList().leftPushAll(key, values);
+        Long l = redisTemplate.opsForList().leftPushAll(key, values);
+        return l;
     }
 
     /**
-     * 向集合最右边添加元素。
+     * 向集合最右边添加元素。sou
      *
      * <p>key value
      */
@@ -912,4 +912,11 @@ public class RedisService<V> {
                 BitFieldSubCommands.create().get(BitFieldSubCommands.BitFieldType.unsigned(limit)).valueAt(offset)));
     }
 
+    public Long luaPipe(String script, String key, List<String> params) {
+        DefaultRedisScript<Long> redisScript = new DefaultRedisScript<>();
+        redisScript.setScriptText(script);
+        redisScript.setResultType(Long.class);
+        Long result = redisTemplate.execute(redisScript, Collections.singletonList(key), params.toArray());
+        return result;
+    }
 }
