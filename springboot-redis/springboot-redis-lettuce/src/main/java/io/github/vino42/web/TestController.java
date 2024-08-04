@@ -47,7 +47,7 @@ public class TestController {
                 "end\n" +
                 "return redis.call('LLEN', key)";
         List<String> ar = Lists.newArrayList();
-        for (int i = 0; i < 10000; i++) {
+        for (int i = 100; i >0 ; i--) {
             ar.add("a" + i);
         }
         Long l = redisService.luaPipe(script, "test456", ar);
@@ -62,7 +62,7 @@ public class TestController {
         StopWatch stopWatch = new StopWatch();
         stopWatch.start();
         List<String> ar = Lists.newArrayList();
-        for (int i = 0; i < 10000; i++) {
+        for (int i = 100; i >0 ; i--) {
             ar.add("a" + i);
         }
         String script = "";

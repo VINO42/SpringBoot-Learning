@@ -1,96 +1,45 @@
-2024-08-04 22:20:55.788 [main] INFO  io.github.vino42.SpringbootRedisApplication - Starting SpringbootRedisApplication using Java 17.0.2 with PID 5764 (G:\Codes\GithubCodes\SpringBoot-Learning\springboot-redis\springboot-redis-lettuce\target\classes started by vino in G:\Codes\GithubCodes\SpringBoot-Learning\springboot-redis\springboot-redis-lettuce)
-2024-08-04 22:20:55.806 [main] INFO  io.github.vino42.SpringbootRedisApplication - No active profile set, falling back to 1 default profile: "default"
-2024-08-04 22:20:56.666 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-2024-08-04 22:20:56.669 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2024-08-04 22:20:56.699 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
-2024-08-04 22:20:57.353 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
-2024-08-04 22:20:57.363 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
-2024-08-04 22:20:57.367 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2024-08-04 22:20:57.367 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.12]
-2024-08-04 22:20:57.469 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2024-08-04 22:20:57.469 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1556 ms
-2024-08-04 22:20:58.420 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
-2024-08-04 22:20:58.442 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
-2024-08-04 22:20:58.458 [main] INFO  io.github.vino42.SpringbootRedisApplication - Started SpringbootRedisApplication in 3.281 seconds (process running for 4.979)
-2024-08-04 22:38:36.234 [main] INFO  io.github.vino42.SpringbootRedisApplication - Starting SpringbootRedisApplication using Java 17.0.2 with PID 3772 (G:\Codes\GithubCodes\SpringBoot-Learning\springboot-redis\springboot-redis-lettuce\target\classes started by vino in G:\Codes\GithubCodes\SpringBoot-Learning\springboot-redis\springboot-redis-lettuce)
-2024-08-04 22:38:36.238 [main] INFO  io.github.vino42.SpringbootRedisApplication - No active profile set, falling back to 1 default profile: "default"
-2024-08-04 22:38:36.939 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-2024-08-04 22:38:36.942 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2024-08-04 22:38:36.975 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
-2024-08-04 22:38:37.472 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
-2024-08-04 22:38:37.483 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
-2024-08-04 22:38:37.485 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2024-08-04 22:38:37.485 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.12]
-2024-08-04 22:38:37.576 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2024-08-04 22:38:37.577 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1283 ms
-2024-08-04 22:38:38.491 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
-2024-08-04 22:38:38.512 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
-2024-08-04 22:38:38.532 [main] INFO  io.github.vino42.SpringbootRedisApplication - Started SpringbootRedisApplication in 2.869 seconds (process running for 3.55)
-2024-08-04 22:38:54.073 [http-nio-8888-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-08-04 22:38:54.073 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2024-08-04 22:38:54.074 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-2024-08-04 22:40:55.704 [main] INFO  io.github.vino42.SpringbootRedisApplication - Starting SpringbootRedisApplication using Java 17.0.2 with PID 18564 (G:\Codes\GithubCodes\SpringBoot-Learning\springboot-redis\springboot-redis-lettuce\target\classes started by vino in G:\Codes\GithubCodes\SpringBoot-Learning\springboot-redis\springboot-redis-lettuce)
-2024-08-04 22:40:55.709 [main] INFO  io.github.vino42.SpringbootRedisApplication - No active profile set, falling back to 1 default profile: "default"
-2024-08-04 22:40:56.373 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-2024-08-04 22:40:56.375 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2024-08-04 22:40:56.402 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
-2024-08-04 22:40:56.879 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
-2024-08-04 22:40:56.888 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
-2024-08-04 22:40:56.890 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2024-08-04 22:40:56.890 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.12]
-2024-08-04 22:40:56.992 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2024-08-04 22:40:56.993 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1226 ms
-2024-08-04 22:40:57.846 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
-2024-08-04 22:40:57.866 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
-2024-08-04 22:40:57.885 [main] INFO  io.github.vino42.SpringbootRedisApplication - Started SpringbootRedisApplication in 2.775 seconds (process running for 3.447)
-2024-08-04 22:41:02.482 [http-nio-8888-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-08-04 22:41:02.482 [http-nio-8888-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2024-08-04 22:41:02.483 [http-nio-8888-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-2024-08-04 22:48:23.389 [main] INFO  io.github.vino42.SpringbootRedisApplication - Starting SpringbootRedisApplication using Java 17.0.2 with PID 20620 (G:\Codes\GithubCodes\SpringBoot-Learning\springboot-redis\springboot-redis-lettuce\target\classes started by vino in G:\Codes\GithubCodes\SpringBoot-Learning\springboot-redis\springboot-redis-lettuce)
-2024-08-04 22:48:23.398 [main] INFO  io.github.vino42.SpringbootRedisApplication - No active profile set, falling back to 1 default profile: "default"
-2024-08-04 22:48:23.997 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-2024-08-04 22:48:24.000 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2024-08-04 22:48:24.030 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
-2024-08-04 22:48:24.485 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
-2024-08-04 22:48:24.493 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
-2024-08-04 22:48:24.494 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2024-08-04 22:48:24.495 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.12]
-2024-08-04 22:48:24.580 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2024-08-04 22:48:24.582 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1095 ms
-2024-08-04 22:48:25.534 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
-2024-08-04 22:48:25.574 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
-2024-08-04 22:48:25.592 [main] INFO  io.github.vino42.SpringbootRedisApplication - Started SpringbootRedisApplication in 2.797 seconds (process running for 3.518)
-2024-08-04 22:48:27.326 [http-nio-8888-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-08-04 22:48:27.326 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2024-08-04 22:48:27.327 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-2024-08-04 22:50:30.738 [main] INFO  io.github.vino42.SpringbootRedisApplication - Starting SpringbootRedisApplication using Java 17.0.2 with PID 9788 (G:\Codes\GithubCodes\SpringBoot-Learning\springboot-redis\springboot-redis-lettuce\target\classes started by vino in G:\Codes\GithubCodes\SpringBoot-Learning\springboot-redis\springboot-redis-lettuce)
-2024-08-04 22:50:30.742 [main] INFO  io.github.vino42.SpringbootRedisApplication - No active profile set, falling back to 1 default profile: "default"
-2024-08-04 22:50:31.364 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-2024-08-04 22:50:31.367 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2024-08-04 22:50:31.397 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
-2024-08-04 22:50:31.850 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
-2024-08-04 22:50:31.861 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
-2024-08-04 22:50:31.862 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2024-08-04 22:50:31.863 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.12]
-2024-08-04 22:50:31.951 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2024-08-04 22:50:31.951 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1156 ms
-2024-08-04 22:50:32.791 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
-2024-08-04 22:50:32.821 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
-2024-08-04 22:50:32.842 [main] INFO  io.github.vino42.SpringbootRedisApplication - Started SpringbootRedisApplication in 2.627 seconds (process running for 3.217)
-2024-08-04 22:50:56.176 [http-nio-8888-exec-3] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-08-04 22:50:56.176 [http-nio-8888-exec-3] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2024-08-04 22:50:56.178 [http-nio-8888-exec-3] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
-2024-08-04 22:52:07.147 [main] INFO  io.github.vino42.SpringbootRedisApplication - Starting SpringbootRedisApplication using Java 17.0.2 with PID 7984 (G:\Codes\GithubCodes\SpringBoot-Learning\springboot-redis\springboot-redis-lettuce\target\classes started by vino in G:\Codes\GithubCodes\SpringBoot-Learning\springboot-redis\springboot-redis-lettuce)
-2024-08-04 22:52:07.150 [main] INFO  io.github.vino42.SpringbootRedisApplication - No active profile set, falling back to 1 default profile: "default"
-2024-08-04 22:52:07.665 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-2024-08-04 22:52:07.668 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2024-08-04 22:52:07.694 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
-2024-08-04 22:52:08.136 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
-2024-08-04 22:52:08.143 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
-2024-08-04 22:52:08.145 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2024-08-04 22:52:08.145 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.12]
-2024-08-04 22:52:08.226 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2024-08-04 22:52:08.226 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1033 ms
-2024-08-04 22:52:09.002 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
-2024-08-04 22:52:09.022 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
-2024-08-04 22:52:09.035 [main] INFO  io.github.vino42.SpringbootRedisApplication - Started SpringbootRedisApplication in 2.451 seconds (process running for 3.092)
+2024-08-05 00:04:41.758 [main] INFO  io.github.vino42.SpringbootRedisApplication - Starting SpringbootRedisApplication using Java 17.0.2 with PID 12992 (G:\Codes\GithubCodes\SpringBoot-Learning\springboot-redis\springboot-redis-lettuce\target\classes started by vino in G:\Codes\GithubCodes\SpringBoot-Learning\springboot-redis\springboot-redis-lettuce)
+2024-08-05 00:04:41.765 [main] INFO  io.github.vino42.SpringbootRedisApplication - No active profile set, falling back to 1 default profile: "default"
+2024-08-05 00:04:42.320 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-08-05 00:04:42.322 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-08-05 00:04:42.349 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2024-08-05 00:04:42.816 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2024-08-05 00:04:42.824 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2024-08-05 00:04:42.825 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-05 00:04:42.825 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.12]
+2024-08-05 00:04:42.909 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-05 00:04:42.909 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1093 ms
+2024-08-05 00:04:43.710 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2024-08-05 00:04:43.730 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2024-08-05 00:04:43.742 [main] INFO  io.github.vino42.SpringbootRedisApplication - Started SpringbootRedisApplication in 2.559 seconds (process running for 3.188)
+2024-08-05 00:04:58.938 [http-nio-8888-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-05 00:04:58.938 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-08-05 00:04:58.939 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-08-05 00:06:49.519 [main] INFO  io.github.vino42.SpringbootRedisApplication - Starting SpringbootRedisApplication using Java 17.0.2 with PID 4608 (G:\Codes\GithubCodes\SpringBoot-Learning\springboot-redis\springboot-redis-lettuce\target\classes started by vino in G:\Codes\GithubCodes\SpringBoot-Learning\springboot-redis\springboot-redis-lettuce)
+2024-08-05 00:06:49.522 [main] INFO  io.github.vino42.SpringbootRedisApplication - No active profile set, falling back to 1 default profile: "default"
+2024-08-05 00:06:50.050 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-08-05 00:06:50.052 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-08-05 00:06:50.079 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2024-08-05 00:06:50.520 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2024-08-05 00:06:50.528 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2024-08-05 00:06:50.530 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-05 00:06:50.530 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.12]
+2024-08-05 00:06:50.624 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-05 00:06:50.624 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1057 ms
+2024-08-05 00:07:30.808 [main] INFO  io.github.vino42.SpringbootRedisApplication - Starting SpringbootRedisApplication using Java 17.0.2 with PID 22560 (G:\Codes\GithubCodes\SpringBoot-Learning\springboot-redis\springboot-redis-lettuce\target\classes started by vino in G:\Codes\GithubCodes\SpringBoot-Learning\springboot-redis\springboot-redis-lettuce)
+2024-08-05 00:07:30.811 [main] INFO  io.github.vino42.SpringbootRedisApplication - No active profile set, falling back to 1 default profile: "default"
+2024-08-05 00:07:31.502 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-08-05 00:07:31.504 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-08-05 00:07:31.538 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2024-08-05 00:07:32.116 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2024-08-05 00:07:32.125 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2024-08-05 00:07:32.128 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-05 00:07:32.128 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.12]
+2024-08-05 00:07:32.223 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-05 00:07:32.224 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1354 ms
+2024-08-05 00:07:33.064 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2024-08-05 00:07:33.082 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2024-08-05 00:07:33.101 [main] INFO  io.github.vino42.SpringbootRedisApplication - Started SpringbootRedisApplication in 2.823 seconds (process running for 3.408)
+2024-08-05 00:07:37.973 [http-nio-8888-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-05 00:07:37.973 [http-nio-8888-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-08-05 00:07:37.975 [http-nio-8888-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
