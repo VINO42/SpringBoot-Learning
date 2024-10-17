@@ -31,4 +31,7 @@ public interface ISysAccountService extends IService<SysAccountEntity> {
     void selecte();
 
     void selectf() throws InterruptedException;
+    void saveA(SysAccountEntity sysAccountEntity) ;
+    void saveB(SysAccountEntity sysAccountEntity) ;
+
 }

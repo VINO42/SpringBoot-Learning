@@ -222,6 +222,16 @@ public class SysAccountServiceImpl extends ServiceImpl<SysAccountMapper, SysAcco
         }
     }
 
+    @Override
+    public void saveA(SysAccountEntity sysAccountEntity) {
+        this.baseMapper.insert(sysAccountEntity);
+    }
+
+    @Override
+    public void saveB(SysAccountEntity sysAccountEntity) {
+        this.baseMapper.insert(sysAccountEntity);
+    }
+
     private void changeUser(List<SysAccountDTO> list) {
         for (SysAccountDTO sysAccountDTO : list) {
             User user = sysAccountDTO.getUser();

@@ -63,6 +63,7 @@ public class SysAccountEntity extends Model<SysAccountEntity> implements Seriali
     /**
      * 账号状态 0禁用1启用
      */
+    @TableField(fill = FieldFill.INSERT_UPDATE)
     private Integer statu;
 
     /**
@@ -70,77 +71,77 @@ public class SysAccountEntity extends Model<SysAccountEntity> implements Seriali
      */
     private Integer isDel;
 
-    /**
-     * 创建时间
-     */
-//    @TableField(fill = FieldFill.INSERT)
-    private LocalDateTime createTime;
-
-    /**
-     * 更新时间
-     */
-//    @TableField(fill = FieldFill.INSERT_UPDATE)
-    private LocalDateTime updateTime;
-
-    /**
-     * 创建者id
-     */
-    private Long createBy;
-
-    /**
-     * 创建者名称
-     */
-    private String createName;
-
-    /**
-     * 创建者id
-     */
-    private Long updateBy;
-
-    /**
-     * 创建者名称
-     */
-    private String updateName;
-
-    /**
-     * 创建ip
-     */
-    private String createdIp;
-
-    /**
-     * 最后登录时间
-     */
-    private LocalDateTime lastSigninTime;
-
-    /**
-     * 最后登录ip
-     */
-    private String lastSigninIp;
-
-    /**
-     * qq三方标识
-     */
-    private String qq;
-
-    /**
-     * 微信三方标识
-     */
-    private String wechat;
-
-    /**
-     * 钉钉三方标识
-     */
-    private String dingtalk;
-
-    /**
-     * 微博三方标识
-     */
-    private String weibo;
-
-    /**
-     * 百度三方标识
-     */
-    private String baidu;
+//    /**
+//     * 创建时间
+//     */
+////    @TableField(fill = FieldFill.INSERT)
+//    private LocalDateTime createTime;
+//
+//    /**
+//     * 更新时间
+//     */
+////    @TableField(fill = FieldFill.INSERT_UPDATE)
+//    private LocalDateTime updateTime;
+//
+//    /**
+//     * 创建者id
+//     */
+//    private Long createBy;
+//
+//    /**
+//     * 创建者名称
+//     */
+//    private String createName;
+//
+//    /**
+//     * 创建者id
+//     */
+//    private Long updateBy;
+//
+//    /**
+//     * 创建者名称
+//     */
+//    private String updateName;
+//
+//    /**
+//     * 创建ip
+//     */
+//    private String createdIp;
+//
+//    /**
+//     * 最后登录时间
+//     */
+//    private LocalDateTime lastSigninTime;
+//
+//    /**
+//     * 最后登录ip
+//     */
+//    private String lastSigninIp;
+//
+//    /**
+//     * qq三方标识
+//     */
+//    private String qq;
+//
+//    /**
+//     * 微信三方标识
+//     */
+//    private String wechat;
+//
+//    /**
+//     * 钉钉三方标识
+//     */
+//    private String dingtalk;
+//
+//    /**
+//     * 微博三方标识
+//     */
+//    private String weibo;
+//
+//    /**
+//     * 百度三方标识
+//     */
+//    private String baidu;
 
 
 }

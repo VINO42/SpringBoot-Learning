@@ -26,9 +26,11 @@ public class RedisTemplateConfig {
         template.setConnectionFactory(redisConnectionFactory);
         // 设置序列化
         template.setKeySerializer(keySerializer());
-        template.setValueSerializer(valueSerializer());
+//        template.setValueSerializer(valueSerializer());
+        template.setValueSerializer(new CustomSerializer<>());
         template.setHashKeySerializer(keySerializer());
-        template.setHashValueSerializer(valueSerializer());
+//        template.setHashValueSerializer(valueSerializer());
+        template.setHashValueSerializer(new CustomSerializer<>());
         template.afterPropertiesSet();
         return template;
     }

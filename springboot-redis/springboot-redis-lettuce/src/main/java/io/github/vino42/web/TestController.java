@@ -1,6 +1,8 @@
 package io.github.vino42.web;
 
+import cn.hutool.core.util.RandomUtil;
 import com.google.common.collect.Lists;
+import io.github.vino42.config.User;
 import io.github.vino42.service.RedisService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.StopWatch;
@@ -72,5 +74,19 @@ public class TestController {
         long totalTimeMillis = stopWatch.getTotalTimeMillis();
         return "ok2---" + l+"----"+totalTimeMillis;
 
+    }
+
+    @RequestMapping("/setJson")
+    public String setJson() {
+        List<User> list= Lists.newArrayList();
+        for (int i = 0; i < 2000; i++) {
+            User user=new User();
+            user.setName(RandomUtil.randomString(8));
+            user.setNickName(RandomUtil.randomString(12));
+            list.add(user);
+        }
+        redisService.set("test1", list);
+//        List<User> o = (List<User>) redisService.get("test");
+        return "ok";
     }
 }

@@ -6,6 +6,7 @@ import com.baomidou.mybatisplus.extension.plugins.inner.BlockAttackInnerIntercep
 import com.baomidou.mybatisplus.extension.plugins.inner.PaginationInnerInterceptor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.boot.web.embedded.tomcat.TomcatConnectorCustomizer;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -32,7 +33,10 @@ public class CustomMybatisPlusConfiguration {
             configuration.addInterceptor(new MybatisLikeSqlEscapeInterceptor());
         };
     }
-
+    @Bean
+    TomcatConnectorCustomizer disableFacadeDiscard() {
+        return (connector) -> connector.setDiscardFacades(false);
+    }
     @Bean
     public MybatisPlusInterceptor mybatisPlusInterceptor() {
         /**

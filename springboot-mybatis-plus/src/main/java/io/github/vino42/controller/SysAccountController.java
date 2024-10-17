@@ -1,5 +1,12 @@
 package io.github.vino42.controller;
+import java.time.LocalDateTime;
+import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.TimeUnit;
 
+import cn.hutool.core.util.IdUtil;
+import cn.hutool.core.util.RandomUtil;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
@@ -7,8 +14,13 @@ import io.github.vino42.domain.entity.SysAccountEntity;
 import io.github.vino42.service.ISysAccountService;
 import io.github.vino42.support.ResultMapper;
 import io.github.vino42.support.ServiceResponseResult;
+import jakarta.servlet.AsyncContext;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import org.checkerframework.checker.units.qual.C;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.util.ContentCachingRequestWrapper;
 
 /**
  * =====================================================================================
@@ -72,4 +84,67 @@ public class SysAccountController {
         sysAccountService.selectf();
         return ResultMapper.ok();
     }
+    @GetMapping(value = "/saveA")
+    public ServiceResponseResult saveA() throws InterruptedException {
+        SysAccountEntity a= new SysAccountEntity();
+        a.setId(1L);
+        a.setOrgId(0L);
+        a.setUserId(0L);
+        a.setMobile("");
+        a.setPassword("");
+        a.setAvatar("");
+        a.setNickName("");
+        a.setIsDel(0);
+
+
+        sysAccountService.saveA(a);
+        return ResultMapper.ok();
+    }
+    @GetMapping(value = "/saveB")
+    public ServiceResponseResult saveB() throws InterruptedException {
+
+        SysAccountEntity byId = sysAccountService.getById(1);
+        sysAccountService.updateById(byId);
+        return ResultMapper.ok();
+    }
+
+    @GetMapping("/getParams")
+    public String getParams(String a, String b) {
+        System.out.println("a: " + a + " , b: " + b );
+
+        return "get success";
+    }
+
+    private ExecutorService executorService = Executors.newFixedThreadPool(10);
+
+    @PostMapping("/postTest")
+    public String postTest(HttpServletRequest request, HttpServletResponse response, String age, String name) {
+//        AsyncContext asyncContext =
+//                request.isAsyncStarted()
+//                        ? request.getAsyncContext()
+//                        : request.startAsync(request, response);
+        ContentCachingRequestWrapper contentCachingRequestWrapper = new ContentCachingRequestWrapper(request);
+        AsyncContext asyncContext1 =
+                contentCachingRequestWrapper.isAsyncStarted()
+                        ? contentCachingRequestWrapper.getAsyncContext()
+                        : contentCachingRequestWrapper.startAsync(request, response);
+        CompletableFuture.runAsync(new Runnable() {
+            @Override
+            public void run() {
+                String age2 = contentCachingRequestWrapper.getParameter("age");
+                String name2 = contentCachingRequestWrapper.getParameter("name");
+                try {
+                   TimeUnit.SECONDS.sleep(1);
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
+                String age3 = request.getParameter("age");
+                String name3 = request.getParameter("name");
+                System.out.println("age1: " + age + " , name1: " + name + " , age2: " + age2 + " , name2: " + name2 + " , age3: " + age3 + " , name3: " + name3);
+                asyncContext1.complete();
+            }
+        },executorService);
+        return "post success";
+    }
+
 }
